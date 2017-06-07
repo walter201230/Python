@@ -6,7 +6,7 @@
 
 
 
-# 三、第一个 Python 程序 #
+# 三、第一个 Python 程序 Hello Python #
 
 Python 的代码使用文本编辑器就可以写了，本草根使用 [Sublime Text](http://www.sublimetext.com/)，第一个 Python 程序当然是 Hello Python 啦，把这句话打印出来。
 
