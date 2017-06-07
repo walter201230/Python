@@ -1,3 +1,3 @@
-# My Awesome Book
+# Python
 
-This file file serves as your book's preface, a great place to describe your book's content and ideas.
+草根开发者学习Python（基于Python3.6）
