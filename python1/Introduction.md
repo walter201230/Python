@@ -6,7 +6,7 @@ Python 是著名的“龟叔” Guido van Rossum 在 1989 年圣诞节期间，�
 
 这是 2017 年 2 月编程语言排行榜 TOP20 榜单：
 
-![2 月编程语言排行榜 TOP20 榜单.png](http://upload-images.jianshu.io/upload_images/2136918-1a4dfdbdd699c8b62.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![2 月编程语言排行榜 TOP20 榜单.png](https://user-gold-cdn.xitu.io/2017/6/18/1ed5d77b644cdd252699e7b2bfd772c5)
 
 还有就是 Top 10 编程语言 TIOBE 指数走势：
 
