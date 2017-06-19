@@ -10,3 +10,8 @@
   * [二、Python 的安装](/python1/Installation.md)
   * [三、第一个 Python 程序](/python1/The_first_procedure.md)
   * [四、集成开发环境（IDE）: PyCharm](/python1/IDE.md)
+* [草根学 Python（二）基本数据类型和变量](/python2/Preface.md)
+  * [一、Python 语法的简要说明](/python2/Grammar.md)
+  * [二、Python 的基本数据类型](/python2/Type_of_data.md)
+  * [三、基本数据类型转换](/python2/Type_conversion.md)
+  * [四、Python 中的变量](/python2/Variable.md)
