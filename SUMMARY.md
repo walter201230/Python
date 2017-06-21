@@ -16,5 +16,5 @@
   * [三、基本数据类型转换](/python2/Type_conversion.md)
   * [四、Python 中的变量](/python2/Variable.md)
 * [List 和 Tuple](/python3/Preface.md)
-  * [一、List（列表）](/python2/List.md)
-  * [二、tuple（元组）](/python2/tuple.md)
+  * [一、List（列表）](/python3/List.md)
+  * [二、tuple（元组）](/python3/tuple.md)
