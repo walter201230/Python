@@ -58,7 +58,22 @@ print(tuple2[0])
 
 具体看下面的这个例子：
 
-![修改 tuple](https://dn-mhke0kuv.qbox.me/f7c65a3eac93c144fb4e.png)
+```python
+#-*-coding:utf-8-*-
+list1=[123,456]
+tuple1=('两点水','twowater','liangdianshui',list1)
+print(tuple1)
+list1[0]=789
+list1[1]=100
+print(tuple1)
+```
+
+输出的结果：
+```
+('两点水', 'twowater', 'liangdianshui', [123, 456])
+('两点水', 'twowater', 'liangdianshui', [789, 100])
+```
+
 
 可以看到，两次输出的 tuple 值是变了的。我们看看 tuple1 的存储是怎样的。
 
