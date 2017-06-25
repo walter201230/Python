@@ -18,3 +18,6 @@
 * [List 和 Tuple](/python3/Preface.md)
   * [一、List（列表）](/python3/List.md)
   * [二、tuple（元组）](/python3/tuple.md)
+* [ Dict 和 Set](/python4/Preface.md)
+  * [一、字典(Dictionary)](/python4/Dict.md)
+  * [二、set](/python4/Set.md)
