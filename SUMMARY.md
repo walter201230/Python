@@ -21,3 +21,7 @@
 * [ Dict 和 Set](/python4/Preface.md)
   * [一、字典(Dictionary)](/python4/Dict.md)
   * [二、set](/python4/Set.md)
+* [条件语句和循环语句](/python5/Preface.md)
+  * [一、条件语句](/python5/If.md)
+  * [二、循环语句](/python5/Cycle.md)
+  * [三、条件语句和循环语句综合实例](/python5/Example.md)
