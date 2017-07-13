@@ -1,5 +1,5 @@
 {
-    "plugins": [ "github"
+    "plugins": [ "github",
      "toggle-chapters"],
     "pluginsConfig": {
         "github": {
