@@ -1,5 +1,6 @@
 {
-    "plugins": [ "github" ],
+    "plugins": [ "github"
+     "toggle-chapters"],
     "pluginsConfig": {
         "github": {
             "url": "https://github.com/TwoWater/Python"
