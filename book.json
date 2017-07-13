@@ -1,9 +1,20 @@
 {
-    "plugins": [ "github",
-     "toggle-chapters"],
+    "plugins": [
+        "github",
+        "toggle-chapters",
+        "github-buttons"
+    ],
     "pluginsConfig": {
         "github": {
             "url": "https://github.com/TwoWater/Python"
+        },
+        "github-buttons": {
+            "repo": "azu/JavaScript-Plugin-Architecture",
+            "types": [
+                "star",
+                "watch"
+            ],
+            "size": "large"
         }
     }
 }
