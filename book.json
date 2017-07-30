@@ -9,12 +9,11 @@
             "url": "https://github.com/TwoWater/Python"
         },
         "github-buttons": {
-            "repo": "azu/JavaScript-Plugin-Architecture",
+            "repo": "https://github.com/TwoWater/Python",
             "types": [
                 "star",
                 "watch"
-            ],
-            "size": "large"
+            ]
         }
     }
 }
