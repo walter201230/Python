@@ -7,13 +7,6 @@
     "pluginsConfig": {
         "github": {
             "url": "https://github.com/TwoWater/Python"
-        },
-        "github-buttons": {
-            "repo": "https://github.com/TwoWater/Python",
-            "types": [
-                "star",
-                "watch"
-            ]
         }
     }
 }
