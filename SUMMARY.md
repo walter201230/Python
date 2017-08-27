@@ -57,3 +57,8 @@
   - [对象的描述器](/python10/4.md)
   - [自定义容器（Container）](/python10/5.md)
   - [运算符相关的魔术方法](/python10/6.md)
+* [草根学Python（十一）枚举类](/python11/Preface.md)
+  - [枚举类的使用](/python11/1.md)
+  - [Enum 的源码](/python11/2.md)
+  - [自定义类型的枚举](/python11/3.md)
+  - [枚举的比较](/python11/4.md)
