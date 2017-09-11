@@ -12,7 +12,7 @@
         },
         "prism": {
             "css": [
-                "prism-themes/themes/prism-cb.css"
+                "prism-themes/themes/prism-atom-dark.css"
             ]
         }
     }
