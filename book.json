@@ -2,11 +2,18 @@
     "plugins": [
         "github",
         "toggle-chapters",
-        "github-buttons"
+        "github-buttons",
+        "prism",
+        "-highlight"
     ],
     "pluginsConfig": {
         "github": {
             "url": "https://github.com/TwoWater/Python"
+        },
+        "prism": {
+            "css": [
+                "prism-themes/themes/prism-cb.css"
+            ]
         }
     }
 }
