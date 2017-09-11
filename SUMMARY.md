@@ -62,3 +62,10 @@
   - [Enum 的源码](/python11/2.md)
   - [自定义类型的枚举](/python11/3.md)
   - [枚举的比较](/python11/4.md)
+* [元类](/python12/Preface.md)
+  - [Python 中类也是对象](/python12/1.md)
+  - [使用 `type()` 动态创建类](/python12/2.md)
+  - [什么是元类](/python12/3.md)
+  - [自定义元类](/python12/4.md)
+  - [使用元类](/python12/4.md)
+ 
