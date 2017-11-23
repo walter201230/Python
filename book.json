@@ -3,7 +3,6 @@
         "github",
         "toggle-chapters",
         "github-buttons",
-        "prism",
         "-highlight"
     ],
     "pluginsConfig": {
