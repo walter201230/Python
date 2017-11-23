@@ -9,11 +9,6 @@
     "pluginsConfig": {
         "github": {
             "url": "https://github.com/TwoWater/Python"
-        },
-        "prism": {
-            "css": [
-                "prism-themes/themes/prism-atom-dark.css"
-            ]
         }
     }
 }
