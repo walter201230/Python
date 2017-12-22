@@ -6,4 +6,4 @@
 
 # 目录 #
 
-![草根学Python（十一） 枚举类](https://user-gold-cdn.xitu.io/2017/8/28/e403eb0edf80f951450edfef8e306a2f)
+![草根学Python（十一） 枚举类](http://p1ceh5usj.bkt.clouddn.com/%E8%8D%89%E6%A0%B9%E5%AD%A6Python%EF%BC%88%E5%8D%81%E4%B8%80%EF%BC%89%20%E6%9E%9A%E4%B8%BE%E7%B1%BB.png)

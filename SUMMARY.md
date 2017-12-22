@@ -67,7 +67,7 @@
   - [使用 `type()` 动态创建类](/python12/2.md)
   - [什么是元类](/python12/3.md)
   - [自定义元类](/python12/4.md)
-  - [使用元类](/python12/4.md)
+  - [使用元类](/python12/5.md)
 * [线程与进程](/python13/Preface.md)
   - [线程与进程](/python13/1.md)
   - [多线程编程](/python13/2.md)

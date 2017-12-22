@@ -7,4 +7,4 @@
 
 # 目录 #
 
-![草根学Python（九）面向对象](https://user-gold-cdn.xitu.io/2017/7/30/4c851ddc1fd9de58d7d7f205b8010c6d)
+![草根学Python（九）面向对象](http://upload-images.jianshu.io/upload_images/2136918-eecf427fdbd1688c?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
