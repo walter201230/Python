@@ -4,4 +4,4 @@
 
 # 目录 #
 
-![草根学Python（七）  迭代器和生成器](https://user-gold-cdn.xitu.io/2017/7/2/a11f2519b863b178ebc91fe2134aa7f6)
+![草根学Python（七）  迭代器和生成器](http://upload-images.jianshu.io/upload_images/2136918-b350c0e98ca47183?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)

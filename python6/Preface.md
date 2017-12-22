@@ -4,4 +4,4 @@
 
 # 目录 #
 
-![草根学Python（六）  函数](https://user-gold-cdn.xitu.io/2017/6/29/a5a5a69256f99d6eba4799bf837bc2cc)
+![草根学Python（六）  函数](http://upload-images.jianshu.io/upload_images/2136918-be9226fe109027f3?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)

@@ -4,7 +4,7 @@
 
 循环语句的一般形式如下：
 
-![python循环语句](https://user-gold-cdn.xitu.io/2017/6/23/d0761ec24b83fea3d7008c29074ba5cb)
+![python循环语句](http://upload-images.jianshu.io/upload_images/2136918-eaaae2fbfec3330f?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 Python 提供了 for 循环和 while 循环，当然还有一些控制循环的语句：
 
@@ -19,7 +19,7 @@ Python 提供了 for 循环和 while 循环，当然还有一些控制循环的�
 
 
 ```python
-count = 1 
+count = 1
 sum = 0
 while (count <= 100):
     sum = sum + count
@@ -38,7 +38,7 @@ print(sum)
 比如，上面的例子是计算 1 到 100 所有整数的和，当我们需要判断 sum 大于 1000 的时候，不在相加时，可以用到 break ，退出整个循环
 
 ```python
-count = 1 
+count = 1
 sum = 0
 while (count <= 100):
     sum = sum + count
@@ -57,7 +57,7 @@ print(sum)
 有时候，我们只想统计 1 到 100 之间的奇数和，那么也就是说当 count 是偶数，也就是双数的时候，我们需要跳出当次的循环，不想加，这时候可以用到 break
 
 ```python
-count = 1 
+count = 1
 sum = 0
 while (count <= 100):
     if ( count % 2 == 0):  # 双数时跳过输出
@@ -105,13 +105,13 @@ else:
 它的流程图基本如下：
 
 
-![for循环的流程图](https://user-gold-cdn.xitu.io/2017/6/26/235ff5c72862b213486e0bf23852a245)
+![for循环的流程图](http://upload-images.jianshu.io/upload_images/2136918-a0728c1c488238af?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 基本的语法格式：
 
 ```python
 for iterating_var in sequence:
-   statements(s)	
+   statements(s)
 ```
 
 实例：
@@ -129,7 +129,7 @@ e
 l
 l
 o
- 
+
 两
 点
 水

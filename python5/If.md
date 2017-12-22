@@ -6,7 +6,7 @@ Python 程序语言指定任何非 0 和非空（null）值为 True，0 或者 n
 
 执行的流程图如下：
 
-![if语句流程图](https://user-gold-cdn.xitu.io/2017/6/23/9b796437c2f0ac3ba1dc5009de091031)
+![if语句流程图](http://upload-images.jianshu.io/upload_images/2136918-4ee2486190450a1a?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ## 1、if 语句的基本形式 ##
 
@@ -46,7 +46,7 @@ else :
 上面也说道，非零数值、非空字符串、非空 list 等，判断为True，否则为False。因此也可以这样写：
 
 ```python
-num = 6 
+num = 6
 if num :
     print('Hello Python')
 ```
@@ -111,7 +111,7 @@ else :
 
 if ( java >= 80  and java < 90 )  or ( python >= 80 and python < 90):
     print('良好')
- 
+
 ```
 
 输出结果：

@@ -79,7 +79,7 @@ print(set1)
 
 因为 set 是一个无序不重复元素集，因此，两个 set 可以做数学意义上的 union(并集), intersection(交集), difference(差集) 等操作。
 
-![set集合运算](https://user-gold-cdn.xitu.io/2017/6/23/9afd2a3081e9d618cc55bf859b545d12)
+![set集合运算](http://upload-images.jianshu.io/upload_images/2136918-733b1d1071f772bd?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 例子：
 

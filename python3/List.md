@@ -24,7 +24,8 @@ print(list1[0:2])
 
 输出的结果：
 
-![访问 List（列表）中的值](https://user-gold-cdn.xitu.io/2017/6/21/eb8c85eb2cfccc112dbb891536014113)
+![访问 List（列表）中的值](http://upload-images.jianshu.io/upload_images/2136918-ab562ada6ba08848?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 
 ## 3、更新 List（列表） ##
 
@@ -43,7 +44,7 @@ print(list1)
 
 输出的结果：
 
-![更新 List（列表）](https://user-gold-cdn.xitu.io/2017/6/21/286bf8a5953d10aada532eb3d2909921)
+![更新 List（列表）](http://upload-images.jianshu.io/upload_images/2136918-96de950da2563ac6?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 
 ## 4、删除 List（列表） ##
@@ -60,7 +61,7 @@ print(list1)
 
 输出的结果:
 
-![删除 List（列表）](https://user-gold-cdn.xitu.io/2017/6/21/a2858b1cc9af6e02527119080a98b6a8)
+![删除 List（列表）](http://upload-images.jianshu.io/upload_images/2136918-e761bf56f583089f?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ## 5、List（列表）运算符 ##
 
@@ -154,4 +155,4 @@ print(newUser)
 
 ```
 
-![list的使用](https://dn-mhke0kuv.qbox.me/529c1895edddaad61deb.png)
+![list的使用](http://upload-images.jianshu.io/upload_images/2136918-65d31cae9f8bb34d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)

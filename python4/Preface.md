@@ -4,4 +4,4 @@
 
 # 目录 #
 
-![草根学Python（四） Dict 和 Set](https://user-gold-cdn.xitu.io/2017/6/25/e56136d9dd32653bd7db19de0969e29d)
+![草根学Python（四） Dict 和 Set](http://upload-images.jianshu.io/upload_images/2136918-726716aa6ab762fd?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)

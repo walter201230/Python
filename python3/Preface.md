@@ -4,4 +4,4 @@
 
 # 目录 #
 
-![草根学Python（三） List 和 Tuple](https://user-gold-cdn.xitu.io/2017/6/21/8135ae4d00e3ea07e3dae2df97fd9aaf)
+![草根学Python（三） List 和 Tuple](http://upload-images.jianshu.io/upload_images/2136918-4d3be05b7f048808?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)

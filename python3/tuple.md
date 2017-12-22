@@ -25,9 +25,10 @@ tuple3=()
 tuple4=(123,)
 ```
 
-如果不加逗号，创建出来的就不是 tuple （元组），而是指 ```123``` 这个数了，这是因为括号 ()既可以表示 tuple，又可以表示数学公式中的小括号，这就产生了歧义，因此，Python 规定，这种情况下，按小括号进行计算，计算结果自然是 ```123``` 。具体看下图 tuple4 和 tuple5 的输出值	
+如果不加逗号，创建出来的就不是 tuple （元组），而是指 ```123``` 这个数了，这是因为括号 ()既可以表示 tuple，又可以表示数学公式中的小括号，这就产生了歧义，因此，Python 规定，这种情况下，按小括号进行计算，计算结果自然是 ```123``` 。具体看下图 tuple4 和 tuple5 的输出值
 
-![创建tuple](https://dn-mhke0kuv.qbox.me/f4b7a62091fb5d4f206f.png)
+![创建tuple](http://upload-images.jianshu.io/upload_images/2136918-2072470ffe7cbee7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 
 
 ## 2、tuple（元组）的索引 ##
@@ -50,7 +51,7 @@ print(tuple2[0])
 
 输出的结果：
 
-![访问 tuple](https://dn-mhke0kuv.qbox.me/72844216bda8bc3e4a4b.png)
+![访问 tuple](http://upload-images.jianshu.io/upload_images/2136918-edfb7c9ebc7d5ab0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ## 4、修改 tuple （元组） ##
 
