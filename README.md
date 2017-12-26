@@ -3,21 +3,83 @@
 草根开发者学习Python（基于Python3.6）
 
 
-**通过本草根的博客整理而成，相应的博客地址**
+**通过本草根的博客整理而成，相应的博客地址,主要内容目录如下：**
 
-|博客文章|平台|
-|:----- |:------|
-|Python 代码规范 | [掘金](https://juejin.im/post/593ebd7eac502e006b520a8f)，[简书](http://www.jianshu.com/p/8b6c425b65a6)，[CSDN](http://blog.csdn.net/Two_Water/article/details/73153945)，[个人博客](http://twowater.com.cn/2017/06/13/Python%E4%BB%A3%E7%A0%81%E8%A7%84%E8%8C%83/)|
-|草根学Python（一）第一个Python程序|[掘金](https://juejin.im/post/594633e5ac502e006b9e1331)，[简书](http://www.jianshu.com/p/0d757860c8cf)，[CSDN](http://blog.csdn.net/Two_Water/article/details/73433637)，[个人博客](http://twowater.com.cn/2017/06/18/%E8%8D%89%E6%A0%B9%E5%AD%A6Python-%E4%B8%80-%E7%AC%AC%E4%B8%80%E4%B8%AAPython%E7%A8%8B%E5%BA%8F/)|
-|草根学 Python（二）基本数据类型和变量|[掘金](https://juejin.im/post/5946b7f25c497d006bef5704)，[简书](http://www.jianshu.com/p/b5388a6c2e72)，[CSDN](http://blog.csdn.net/Two_Water/article/details/73478060)，[个人博客](http://twowater.com.cn/2017/06/19/%E8%8D%89%E6%A0%B9%E5%AD%A6Python-%E4%BA%8C-%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E5%92%8C%E5%8F%98%E9%87%8F/)|
-|草根学 Python（三）List 和 Tuple|[掘金](https://juejin.im/post/593fdb87128fe1006a02ce92)，[简书](http://www.jianshu.com/p/97c97d5a5a7c)，[CSDN](http://blog.csdn.net/Two_Water/article/details/73524367)，[个人博客](http://twowater.com.cn/2017/06/21/%E8%8D%89%E6%A0%B9%E5%AD%A6Python-%E4%B8%89-List-%E5%92%8C-Tuple/)|
-|草根学Python（四） Dict 和 Set|[掘金](https://juejin.im/post/5947bf84ac502e5490e4a6a1)，[简书](http://www.jianshu.com/p/90f5b897ce77)，[CSDN](http://blog.csdn.net/two_water/article/details/73719026)，[个人博客](http://twowater.com.cn/2017/06/25/%E8%8D%89%E6%A0%B9%E5%AD%A6Python-%E5%9B%9B-Dict-%E5%92%8C-Set/)|
-|草根学Python（五） 条件语句和循环语句|[掘金](https://juejin.im/post/594c6c52f265da6c1f75f164)，[简书](http://www.jianshu.com/p/2b80009b1e8c)，[CSDN](http://blog.csdn.net/Two_Water/article/details/73762517)，[个人博客](http://twowater.com.cn/2017/06/27/%E8%8D%89%E6%A0%B9%E5%AD%A6Python-%E4%BA%94-%E6%9D%A1%E4%BB%B6%E8%AF%AD%E5%8F%A5%E5%92%8C%E5%BE%AA%E7%8E%AF%E8%AF%AD%E5%8F%A5/)|
-|草根学Python（六） 函数|[掘金](https://juejin.im/post/5946784461ff4b006cf1d8ec)，[简书](http://www.jianshu.com/p/d8f2a55edc75)，[CSDN](http://blog.csdn.net/Two_Water/article/details/73865622)，[个人博客](http://twowater.com.cn/2017/06/29/%E8%8D%89%E6%A0%B9%E5%AD%A6Python-%E5%85%AD-%E5%87%BD%E6%95%B0/)|
-|草根学Python（七） 迭代器和生成器|[掘金](https://juejin.im/post/59589fedf265da6c386ce4ac)，[简书](http://www.jianshu.com/p/74c0c1db1490)，[CSDN](http://blog.csdn.net/Two_Water/article/details/74164652)，[个人博客](http://twowater.com.cn/2017/07/02/%E8%8D%89%E6%A0%B9%E5%AD%A6Python-%E4%B8%83-%E8%BF%AD%E4%BB%A3%E5%99%A8%E5%92%8C%E7%94%9F%E6%88%90%E5%99%A8/)|
-|草根学Python（八） 模块与包|[掘金](https://juejin.im/post/5962ddf95188252ec34009da)，[简书](http://www.jianshu.com/p/7f05f915d2ac)，[CSDN](http://blog.csdn.net/Two_Water/article/details/75042211)，[个人博客](http://twowater.com.cn/2017/07/12/%E8%8D%89%E6%A0%B9%E5%AD%A6Python-%E5%85%AB-%E6%A8%A1%E5%9D%97%E4%B8%8E%E5%8C%85/)|
-|草根学Python（九） 面向对象|[掘金](https://juejin.im/post/596ca6656fb9a06b9b73c8b0)，[简书](http://www.jianshu.com/p/6ecaa414c702)，[CSDN](http://blog.csdn.net/two_water/article/details/76408890)，[个人博客](http://twowater.com.cn/2017/07/31/%E8%8D%89%E6%A0%B9%E5%AD%A6Python-%E4%B9%9D-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/)|
-|草根学Python（十）Python 的 Magic Method|[掘金](https://juejin.im/post/59828c2f6fb9a03c56319baa)，[简书](http://www.jianshu.com/p/345a80a02546)，[CSDN](http://blog.csdn.net/two_water/article/details/77351516)，[个人博客](http://twowater.com.cn/2017/08/18/%E8%8D%89%E6%A0%B9%E5%AD%A6Python-%E5%8D%81-Python-%E7%9A%84-Magic-Method/)|
-|草根学Python（十一）枚举类|[掘金](https://juejin.im/post/599906a2f265da24722faec3)，[简书](http://www.jianshu.com/p/c4d2629e5015)，[CSDN](http://blog.csdn.net/Two_Water/article/details/77626179)，[个人博客](http://twowater.com.cn/2017/08/28/%E8%8D%89%E6%A0%B9%E5%AD%A6Python-%E5%8D%81%E4%B8%80-%E6%9E%9A%E4%B8%BE%E7%B1%BB/)|
-|草根学Python（十二）元类|[掘金](https://juejin.im/post/59aff224f265da2476426796)，[简书](http://www.jianshu.com/p/9b10fcee7cda)，[CSDN](http://blog.csdn.net/two_water/article/details/77877621)，[个人博客](http://twowater.com.cn/2017/09/07/%E8%8D%89%E6%A0%B9%E5%AD%A6Python-%E5%8D%81%E4%BA%8C-%E5%85%83%E7%B1%BB/)|
-|草根学Python（十三）线程和进程|[掘金](https://juejin.im/post/59cdbabb5188257a134abb6e)，[简书](http://www.jianshu.com/p/9106092d554f)，[CSDN](http://blog.csdn.net/Two_Water/article/details/78221478)，[个人博客](http://twowater.com.cn/2017/10/13/%E8%8D%89%E6%A0%B9%E5%AD%A6Python-%E5%8D%81%E4%B8%89-%E7%BA%BF%E7%A8%8B%E5%92%8C%E8%BF%9B%E7%A8%8B/)| 
+* [Python代码规范](/codeSpecification/codeSpecification_Preface.md)
+  - [简明概述](/codeSpecification/codeSpecification_first.md)
+  - [注释](/codeSpecification/codeSpecification_second.md)
+  - [命名规范](/codeSpecification/codeSpecification_third.md)
+* [第一个Python程序](/python1/Preface.md)
+  - [Python 简介](/python1/Introduction.md)
+  - [Python 的安装](/python1/Installation.md)
+  - [第一个 Python 程序](/python1/The_first_procedure.md)
+  - [集成开发环境（IDE）: PyCharm](/python1/IDE.md)
+* [基本数据类型和变量](/python2/Preface.md)
+  - [Python 语法的简要说明](/python2/Grammar.md)
+  - [Python 的基本数据类型](/python2/Type_of_data.md)
+  - [基本数据类型转换](/python2/Type_conversion.md)
+  - [Python 中的变量](/python2/Variable.md)
+* [List 和 Tuple](/python3/Preface.md)
+  - [List（列表）](/python3/List.md)
+  - [tuple（元组）](/python3/tuple.md)
+* [ Dict 和 Set](/python4/Preface.md)
+  - [字典(Dictionary)](/python4/Dict.md)
+  - [set](/python4/Set.md)
+* [条件语句和循环语句](/python5/Preface.md)
+  - [条件语句](/python5/If.md)
+  - [循环语句](/python5/Cycle.md)
+  - [条件语句和循环语句综合实例](/python5/Example.md)
+* [函数](/python6/Preface.md)
+  - [Python 自定义函数的基本步骤](/python6/1.md)
+  - [函数传值问题](/python6/2.md)
+  - [函数返回值](/python6/3.md)
+  - [函数的参数](/python6/4.md)
+  - [匿名函数](/python6/5.md)
+* [迭代器和生成器](/python7/Preface.md)
+  - [迭代](/python7/1.md)
+  - [Python 迭代器](/python7/2.md)
+  - [lsit 生成式（列表生成式）](/python7/3.md)
+  - [生成器](/python7/4.md)
+  - [迭代器和生成器综合例子](/python7/5.md)
+* [模块与包](/python8/Preface.md)
+  - [Python 模块简介](/python8/1.md)
+  - [模块的使用](/python8/2.md)
+  - [主模块和非主模块](/python8/3.md)
+  - [包](/python8/4.md)
+  - [作用域](/python8/5.md)
+* [面向对象](/python9/Preface.md)
+  - [面向对象的概念](/python9/1.md)
+  - [类](/python9/2.md)
+  - [类的属性](/python9/3.md)
+  - [类的方法](/python9/4.md)
+  - [类的继承](/python9/5.md)
+  - [类的多态](/python9/6.md)
+* [Python 的 Magic Method](/python10/Preface.md)
+  - [Python 的 Magic Method](/python10/1.md)
+  - [构造(`__new__`)和初始化(`__init__`)](/python10/2.md)
+  - [属性的访问控制](/python10/3.md)
+  - [对象的描述器](/python10/4.md)
+  - [自定义容器（Container）](/python10/5.md)
+  - [运算符相关的魔术方法](/python10/6.md)
+* [枚举类](/python11/Preface.md)
+  - [枚举类的使用](/python11/1.md)
+  - [Enum 的源码](/python11/2.md)
+  - [自定义类型的枚举](/python11/3.md)
+  - [枚举的比较](/python11/4.md)
+* [元类](/python12/Preface.md)
+  - [Python 中类也是对象](/python12/1.md)
+  - [使用 `type()` 动态创建类](/python12/2.md)
+  - [什么是元类](/python12/3.md)
+  - [自定义元类](/python12/4.md)
+  - [使用元类](/python12/5.md)
+* [线程与进程](/python13/Preface.md)
+  - [线程与进程](/python13/1.md)
+  - [多线程编程](/python13/2.md)
+  - [进程](/python13/3.md)
+* [一步一步了解正则表达式](/python14/Preface.md)
+    - [初识 Python 正则表达式](/python14/1.md)
+    - [字符集](/python14/2.md)
+    - [数量词](/python14/3.md)
+    - [边界匹配符和组](/python14/4.md)
+    - [re.sub](/python14/5.md)
+    - [re.match 和 re.search](/python14/6.md)
