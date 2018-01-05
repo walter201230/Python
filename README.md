@@ -2,6 +2,7 @@
 
 草根学 Python 是基于 Python 3.6 写的 Python 入门系列教程，为了更好的阅读，把它整理在 [GitBook](https://www.readwithu.com/) 上了，希望对 Python 入门者有帮助。
 
+注：如果 [GitBook](https://www.readwithu.com/)  访问慢，也可以到个人博客查阅：[草根学 Python](http://twowater.com.cn/categories/Python/%E8%8D%89%E6%A0%B9%E5%AD%A6-Python/)
 
 **主要目录如下：**
 
