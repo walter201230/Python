@@ -79,3 +79,4 @@
     - [边界匹配符和组](/python14/4.md)
     - [re.sub](/python14/5.md)
     - [re.match 和 re.search](/python14/6.md)
+* [闭包](/python15/1.md)
