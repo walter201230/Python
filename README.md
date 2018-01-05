@@ -1,9 +1,9 @@
 # Python
 
-草根开发者学习Python（基于Python3.6）
+草根学 Python 是基于 Python 3.6 写的 Python 入门系列教程，为了更好的阅读，把它整理在 [GitBook](https://www.readwithu.com/) 上了，希望对 Python 入门者有帮助。
 
 
-**通过本草根的博客整理而成，相应的博客地址,主要内容目录如下：**
+**主要目录如下：**
 
 * [Python代码规范](/codeSpecification/codeSpecification_Preface.md)
   - [简明概述](/codeSpecification/codeSpecification_first.md)
