@@ -17,8 +17,8 @@ IT 行业相对于一般传统行业，发展更新速度更快，一旦停止�
 
 因为每个人的需求不同，这里整理了一批 Python 比较好的学习资料：
 
-* [Python 博客网站资源](/Res/Python 博客网站资源.md)
-* [Python 视频教程资源](/Res/Python 视频教程资源.md)
+* [Python 博客网站资源](/Res/Python博客网站资源.md)
+* [Python 视频教程资源](/Res/Python视频教程资源.md)
 
 # Python 入门
 

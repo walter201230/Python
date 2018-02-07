@@ -9,4 +9,4 @@
 
 * **Python 全栈开发教程**
     - 链接：[https://pan.baidu.com/s/1dvNbVS](https://pan.baidu.com/s/1dvNbVS) 密码：tj0t
-    - 目录 [Python 全栈开发教学视频目录](/Res/Python 全栈开发教学视频目录.md)
+    - 目录 [Python全栈开发教学视频目录](/Res/Python全栈开发教学视频目录.md)
