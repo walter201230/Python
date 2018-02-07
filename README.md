@@ -11,11 +11,18 @@ IT 行业相对于一般传统行业，发展更新速度更快，一旦停止�
 至于如何 FQ ，这里提供一下我用过的工具：[FQ工具集](/Res/FQ.md)
 
 
+# Python 学习资源集
+
+相信很多人学习某门编程语言的时候，都会找各种学习资料。说句实话，资料太多，反而没用，根据自己的学习习惯，个人能力选择一门资源坚持学就好了。
+
+因为每个人的需求不同，这里整理了一批 Python 比较好的学习资料：
+
+* [Python 博客网站资源](/Res/Python 博客网站资源.md)
+* [Python 视频教程资源](/Res/Python 视频教程资源.md)
+
 # Python 入门
 
 对于入门，主要是掌握基本的语法和熟悉编程规范，因此大部分的教程基本一致的，所以还是建议选好适合自己的一个教程，坚持学下去。
-
-这里个人整理了一部分教程，包括有视频和博客：[Python 入门资源](/Res/python入门学习资料.md)
 
 在 Python 入门中，本人自己编写了一系列的 《 草根学 Python 》 博客， 是基于 Python 3.6 写的 Python 入门系列教程，为了更好的阅读，把它整理在 [GitBook](https://www.readwithu.com/) 上；如果 [GitBook](https://www.readwithu.com/)  访问慢，也可以到个人博客查阅：[草根学 Python](http://twowater.com.cn/categories/Python/%E8%8D%89%E6%A0%B9%E5%AD%A6-Python/)，希望对各位入门 Python 有所帮助。
 
