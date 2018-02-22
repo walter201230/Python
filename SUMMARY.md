@@ -82,4 +82,4 @@
 * [闭包](/Article/python15/1.md)
 * [装饰器](/Article/python16/1.md)
 * [知识点补漏](README.md)
-    - [Python 关键字 yield](/Article\supplement\Python关键字yield.md)
+    - [Python 关键字 yield](/Article/supplement/Python关键字yield.md)
