@@ -12,8 +12,10 @@
     - 目录 [Python全栈开发教学视频目录](/Res/Python全栈开发教学视频目录.md)
 
 * **Python升级3.6 强力Django+杀手级Xadmin打造在线教育平台**
-    - 链接: [https://pan.baidu.com/s/1kWHiUOJ](https://pan.baidu.com/s/1kWHiUOJ) 密码: 1z65
+    -链接:https://pan.baidu.com/s/1INbI_KwpSzbDGzdE6kySpw  密码:lhg1
 
 
 * **Python高效编程技巧实战**
-    - 链接: [https://pan.baidu.com/s/1bqosZLl](https://pan.baidu.com/s/1bqosZLl) 密码: dtn6
+    - 链接 : https://pan.baidu.com/s/1Li0dyZM5dGEOIB6St66zwQ  密码:z8rc
+
+
