@@ -1,7 +1,4 @@
-#!/usr/bin/env python
-# -*- coding: UTF-8 -*-
 
-# 旧式类
 class OldClass:
     def __init__(self, account, name):
         self.account = account;
