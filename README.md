@@ -18,16 +18,17 @@ IT 行业相对于一般传统行业，发展更新速度更快，一旦停止�
 因为每个人的需求不同，这里整理了一批 Python 比较好的学习资料：
 
 * [Python 博客网站资源](/Res/Python博客网站资源.md)
-* [Python 视频教程资源](/Res/Python视频教程资源.md)
+
 
 # Python 入门
 
 对于入门，主要是掌握基本的语法和熟悉编程规范，因此大部分的教程基本一致的，所以还是建议选好适合自己的一个教程，坚持学下去。
 
-在 Python 入门中，本人自己编写了一系列的 《 草根学 Python 》 博客， 是基于 Python 3.6 写的 Python 入门系列教程，为了更好的阅读，把它整理在 [GitBook](https://www.readwithu.com/) 上；如果 [GitBook](https://www.readwithu.com/)  访问慢，也可以到个人博客查阅：[草根学 Python](http://twowater.com.cn/categories/Python/%E8%8D%89%E6%A0%B9%E5%AD%A6-Python/)，希望对各位入门 Python 有所帮助。
+在 Python 入门中，本人编写了一系列的 《草根学 Python 》 博客， 是基于 Python 3.6 写的 Python 入门系列教程，为了更好的阅读，把它整理在 [GitBook](https://www.readwithu.com/) 上；如果 [GitBook](https://www.readwithu.com/)  访问慢，也可以到个人博客查阅：[草根学 Python](http://twowater.com.cn/categories/Python/%E8%8D%89%E6%A0%B9%E5%AD%A6-Python/)，希望对各位入门 Python 有所帮助。
 
 **主要目录如下：**
 
+* [为什么学Python?](/Article/python0/为什么学Python?.md)
 * [Python代码规范](/Article/codeSpecification/codeSpecification_Preface.md)
   - [简明概述](/Article/codeSpecification/codeSpecification_first.md)
   - [注释](/Article/codeSpecification/codeSpecification_second.md)

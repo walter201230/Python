@@ -1,6 +1,7 @@
 # Summary
 
 * [前言](README.md)
+* [为什么学Python?](/Article/python0/为什么学Python?.md)
 * [Python代码规范](/Article/codeSpecification/codeSpecification_Preface.md)
   - [简明概述](/Article/codeSpecification/codeSpecification_first.md)
   - [注释](/Article/codeSpecification/codeSpecification_second.md)
@@ -87,3 +88,5 @@
 * [使用Python虚拟环境](/Article/advanced/使用Python虚拟环境.md)
 * [Mac中使用virtualenv和virtualenvwrapper](/Article/advanced/Mac中使用virtualenv和virtualenvwrapper.md)
 * [**Django**](/Article/django/Django.md)
+
+
