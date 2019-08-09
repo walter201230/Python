@@ -6,11 +6,11 @@ Python 是著名的“龟叔” Guido van Rossum 在 1989 年圣诞节期间，�
 
 这是 2017 年 2 月编程语言排行榜 TOP20 榜单：
 
-![2 月编程语言排行榜 TOP20 榜单.png](http://upload-images.jianshu.io/upload_images/2136918-f7fc786f001cbfc0?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![2 月编程语言排行榜 TOP20 榜单.png](http://twowaterimage.oss-cn-beijing.aliyuncs.com/2019-07-22-080118.jpg)
 
 还有就是 Top 10 编程语言 TIOBE 指数走势：
 
-![Top 10 编程语言 TIOBE 指数走势.png](http://upload-images.jianshu.io/upload_images/2136918-2714dba010ea5d75.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](http://twowaterimage.oss-cn-beijing.aliyuncs.com/2019-07-22-080145.jpg)
 
 总的来说，这几种编程语言各有千秋，但不难看出，最近几年 Python 的发展非常的快，特别最近流行的机器学习，数据分析，更让 python 快速的发展起来。
 
@@ -21,3 +21,5 @@ Python 是高级编程语言，它有一个特点就是能快速的开发。Pyth
 第一个缺点就是运行速度慢，和C程序相比非常慢，因为Python是解释型语言，你的代码在执行时会一行一行地翻译成CPU能理解的机器码，这个翻译过程非常耗时，所以很慢。而C程序是运行前直接编译成CPU能执行的机器码，所以非常快。
 
 第二个缺点就是代码不能加密。如果要发布你的 Python 程序，实际上就是发布源代码。像 JAVA , C 这些编译型的语言，都没有这个问题，而解释型的语言，则必须把源码发布出去。
+
+

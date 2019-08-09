@@ -24,11 +24,13 @@ IT 行业相对于一般传统行业，发展更新速度更快，一旦停止�
 
 对于入门，主要是掌握基本的语法和熟悉编程规范，因此大部分的教程基本一致的，所以还是建议选好适合自己的一个教程，坚持学下去。
 
-在 Python 入门中，本人编写了一系列的 《草根学 Python 》 博客， 是基于 Python 3.6 写的 Python 入门系列教程，为了更好的阅读，把它整理在 [GitBook](https://www.readwithu.com/) 上；如果 [GitBook](https://www.readwithu.com/)  访问慢，也可以到个人博客查阅：[草根学 Python](http://twowater.com.cn/categories/Python/%E8%8D%89%E6%A0%B9%E5%AD%A6-Python/)，希望对各位入门 Python 有所帮助。
+在 Python 入门中，本人编写了一系列的 《草根学 Python 》 博客， 是基于 Python 3.6 写的 Python 入门系列教程，为了更好的阅读，把它整理在 [GitBook](https://www.readwithu.com/) 上，希望对各位入门 Python 有所帮助。
+
+>注：2018 年 02 月 27 日，基础知识入门部分已经完成了的。因近期读者反映有些图片没法打开了（之前图片放在七牛云，用的是临时链接，最近七牛云把这个给关闭了，导致图片没法打开），且自己对之前的内容有些不满意，决定在 2019 年 7 月 7 日开始进行了再次修改。
 
 **主要目录如下：**
 
-* [为什么学Python?](/Article/python0/为什么学Python?.md)
+* [为什么学Python?](/Article/python0/WhyStudyPython.md)
 * [Python代码规范](/Article/codeSpecification/codeSpecification_Preface.md)
   - [简明概述](/Article/codeSpecification/codeSpecification_first.md)
   - [注释](/Article/codeSpecification/codeSpecification_second.md)

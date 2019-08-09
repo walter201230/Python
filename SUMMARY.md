@@ -1,7 +1,7 @@
 # Summary
 
 * [前言](README.md)
-* [为什么学Python?](/Article/python0/为什么学Python?.md)
+* [为什么学Python?](/Article/python0/WhyStudyPython?.md)
 * [Python代码规范](/Article/codeSpecification/codeSpecification_Preface.md)
   - [简明概述](/Article/codeSpecification/codeSpecification_first.md)
   - [注释](/Article/codeSpecification/codeSpecification_second.md)

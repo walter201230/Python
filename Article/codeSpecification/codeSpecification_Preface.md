@@ -1,7 +1,10 @@
 # 前言 #
 
-Python 学习之旅，先来看看 Python 的代码规范，让自己先有个意识，而且在往后的学习中慢慢养成习惯
+本来不应该把这个章节放在那面前面的，因为还没进行学习之前，直接看这个章节，会感觉有很多莫名其妙的东西。
+
+但是把这个章节放在前面的用意，只是让大家预览一下，有个印象，而且在以后的学习中，也方便大家查阅。
 
 # 目录 #
 
-![Python代码规范](https://dn-mhke0kuv.qbox.me/a542abfa2efe1fefd95e.png)
+![](http://twowaterimage.oss-cn-beijing.aliyuncs.com/2019-07-20-Python%E4%BB%A3%E7%A0%81%E8%A7%84%E8%8C%83.png)
+
