@@ -1,4 +1,4 @@
-# 四、Python 中的变量 #
+# 六、Python 中的变量 #
 
 ## 1、变量的创建和赋值 ##
 
@@ -23,7 +23,9 @@ a=88
 
 这主要是变量 a 一开始是指向了字符串 `Hello Python` ，`b=a` 创建了变量 b ,变量 b 也指向了a 指向的字符串 `Hello Python`，最后 `a=123`，把 变量 a 重新指向了 `123`，所以最后输出变量 b 是 `Hello Python`
 
-![变量的指向](https://dn-mhke0kuv.qbox.me/91ef196a3875cb12abeb.png)
+![](http://twowaterimage.oss-cn-beijing.aliyuncs.com/2019-08-31-%E5%8F%98%E9%87%8F%E7%9A%84%E6%8C%87%E5%90%91.png)
+
+ 
 
 ## 3、多个变量赋值 ##
 
@@ -42,3 +44,4 @@ a, b, c = 1, 2, "liangdianshui"
 ```
 
 以上实例，两个整型对象 1 和 2 的分配给变量 a 和 b，字符串对象 "liangdianshui" 分配给变量 c。
+
