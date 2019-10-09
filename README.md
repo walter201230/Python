@@ -4,11 +4,13 @@ IT 行业相对于一般传统行业，发展更新速度更快，一旦停止�
 自学 Python ，也是一样，不要一开始因为头脑发热就不停地收藏各种资料网站，购买各种书籍，下载了大量的教学视频，过了几天，学习的热情开始褪去，再过几个星期，终于完成了学习课程 —— 《从入门到放弃》。所以，学习 Python 需要一步一个脚印，踏踏实实地学。
 
 
+
 # FQ
 
 在讲 Python 如何入门之前，个人建议最好每个人都有自己的 FQ 工具，多使用 Google 搜索，多去看一下墙外的世界，多看 Github 上的开源项目。
 
 至于如何 FQ ，这里提供一下我用过的工具：[FQ工具集](/Res/FQ.md)
+
 
 
 # Python 学习资源集
@@ -18,6 +20,11 @@ IT 行业相对于一般传统行业，发展更新速度更快，一旦停止�
 因为每个人的需求不同，这里整理了一批 Python 比较好的学习资料：
 
 * [Python 博客网站资源](/Res/Python博客网站资源.md)
+
+还有一些有趣的网站：
+
+* [一个可以看执行过程的网站](http://www.pythontutor.com/visualize.html#mode=edit)
+
 
 
 # Python 入门
@@ -57,31 +64,34 @@ IT 行业相对于一般传统行业，发展更新速度更快，一旦停止�
   - [条件语句](/Article/PythonBasis/python5/If.md)
   - [循环语句](/Article/PythonBasis/python5/Cycle.md)
   - [条件语句和循环语句综合实例](/Article/PythonBasis/python5/Example.md)
-* [函数](/Article/python6/Preface.md)
-  - [Python 自定义函数的基本步骤](/Article/python6/1.md)
-  - [函数传值问题](/Article/python6/2.md)
-  - [函数返回值](/Article/python6/3.md)
-  - [函数的参数](/Article/python6/4.md)
-  - [匿名函数](/Article/python6/5.md)
-* [迭代器和生成器](/Article/python7/Preface.md)
-  - [迭代](/Article/python7/1.md)
-  - [Python 迭代器](/Article/python7/2.md)
-  - [lsit 生成式（列表生成式）](/Article/python7/3.md)
-  - [生成器](/Article/python7/4.md)
-  - [迭代器和生成器综合例子](/Article/python7/5.md)
-* [模块与包](/Article/python8/Preface.md)
-  - [Python 模块简介](/Article/python8/1.md)
-  - [模块的使用](/Article/python8/2.md)
-  - [主模块和非主模块](/Article/python8/3.md)
-  - [包](/Article/python8/4.md)
-  - [作用域](/Article/python8/5.md)
-* [面向对象](/Article/python9/Preface.md)
-  - [面向对象的概念](/Article/python9/1.md)
-  - [类](/Article/python9/2.md)
-  - [类的属性](/Article/python9/3.md)
-  - [类的方法](/Article/python9/4.md)
-  - [类的继承](/Article/python9/5.md)
-  - [类的多态](/Article/python9/6.md)
+* [函数](/Article/PythonBasis/python6/Preface.md)
+  - [Python 自定义函数的基本步骤](/Article/PythonBasis/python6/1.md)
+  - [函数返回值](/Article/PythonBasis/python6/2.md)
+  - [函数的参数](/Article/PythonBasis/python6/3.md)
+  - [函数传值问题](/Article/PythonBasis/python6/4.md)
+  - [匿名函数](/Article/PythonBasis/python6/5.md)
+* [迭代器和生成器](/Article/PythonBasis/python7/Preface.md)
+  - [迭代](/Article/PythonBasis/python7/1.md)
+  - [Python 迭代器](/Article/PythonBasis/python7/2.md)
+  - [lsit 生成式（列表生成式）](/Article/PythonBasis/python7/3.md)
+  - [生成器](/Article/PythonBasis/python7/4.md)
+  - [迭代器和生成器综合例子](/Article/PythonBasis/python7/5.md)
+* [面向对象](/Article/PythonBasis/python8/Preface.md)
+  - [面向对象的概念](/Article/PythonBasis/python8/1.md)
+  - [类的定义和调用](/Article/PythonBasis/python8/2.md)
+  - [类方法](/Article/PythonBasis/python8/3.md)
+  - [修改和增加类属性](/Article/PythonBasis/python8/4.md)
+  - [类和对象](/Article/PythonBasis/python8/5.md)
+  - [初始化函数](/Article/PythonBasis/python8/6.md)
+  - [类的继承](/Article/PythonBasis/python8/7.md)
+  - [类的多态](/Article/PythonBasis/python8/8.md)
+  - [类的访问控制](/Article/PythonBasis/python8/9.md)
+* [模块与包](/Article/PythonBasis/python9/Preface.md)
+  - [Python 模块简介](/Article/PythonBasis/python9/1.md)
+  - [模块的使用](/Article/PythonBasis/python9/2.md)
+  - [主模块和非主模块](/Article/PythonBasis/python9/3.md)
+  - [包](/Article/PythonBasis/python9/4.md)
+  - [作用域](/Article/PythonBasis/python9/5.md)
 * [Python 的 Magic Method](/Article/python10/Preface.md)
   - [Python 的 Magic Method](/Article/python10/1.md)
   - [构造(`__new__`)和初始化(`__init__`)](/Article/python10/2.md)
@@ -115,8 +125,10 @@ IT 行业相对于一般传统行业，发展更新速度更快，一旦停止�
 * [装饰器](/Article/python16/1.md)
 
 
+
 # 知识点补漏
 * [Python 关键字 yield](/Article/supplement/Python关键字yield.md)
+
 
 
 # Python 进阶

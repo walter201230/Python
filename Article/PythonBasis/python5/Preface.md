@@ -1,10 +1,16 @@
 # 前言 #
 
-第一次建学习群，而且是 Python 的学习群，虽然之前深入学习和工作都是 Android 相关的，最近学起来 Python ，真的很好玩，所以创了个微信群，希望童鞋们进群学习讨论。也可以直接加我微`androidwed`拉进群。也欢迎大家在 [Gitbook](https://www.readwithu.com/) 中提出文章的不足。
+通常都听到别人说，计算机很牛逼，很聪明，其实计算机一点都不聪明，光是你要跟他沟通，都会气 shi 你，聪明的是在写程序的你。
 
-![Python学习群](http://upload-images.jianshu.io/upload_images/2136918-f3f0c60ce12e5a92?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+写程序就是跟计算机沟通，告诉它要做什么。
+
+竟然是这样，那么肯定缺少不了一些沟通逻辑。比如你要告诉计算机在什么情况下做什么？或者在哪个时间点做什么？
+
+这都需要用到逻辑判断。这一章节，主要就是说这个。
 
 
 # 目录 #
 
-![草根学Python（五）  条件语句和循环语句](http://upload-images.jianshu.io/upload_images/2136918-32902eec93d9ffc1?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](http://twowaterimage.oss-cn-beijing.aliyuncs.com/2019-09-09-%E6%9D%A1%E4%BB%B6%E8%AF%AD%E5%8F%A5%E5%92%8C%E5%BE%AA%E7%8E%AF%E8%AF%AD%E5%8F%A5.png)
+
+
