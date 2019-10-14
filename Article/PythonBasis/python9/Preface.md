@@ -1,7 +1,9 @@
 # 前言 #
 
-之前的文章都是使用[Sublime Text](http://www.sublimetext.com/)来编写 Python 的，主要是为了更好的熟悉和了解 Python ，可是开发效率不高，也不方便，从这章开始，改为使用 Pycharm 了，在之前的篇节[集成开发环境（IDE）: PyCharm](https://www.readwithu.com/python1/IDE.html)中介绍了 PyCharm ，如果如要激活软件可以通过授权服务器来激活，具体看这个网址。[JetBrains激活（http://www.imsxm.com/jetbrains-license-server.html）](http://www.imsxm.com/jetbrains-license-server.html)当然你也可以尝试破解，  [Pycharm2017.1.1破解方式](http://blog.csdn.net/zyfortirude/article/details/70800681)，不过对于软件的升级不方便。
+学习到这里，可以说 Python 基础学习基本接近尾声了。
 
 # 目录 #
 
-![草根学Python（八）  模块与包](http://upload-images.jianshu.io/upload_images/2136918-4434f73dc82c0101?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](http://twowaterimage.oss-cn-beijing.aliyuncs.com/2019-10-14-%E6%A8%A1%E5%9D%97%E4%B8%8E%E5%8C%85.png)
+
+
