@@ -22,6 +22,7 @@
 
     当然，最好的还是自己能搭建 ss/ssr 服务器，这里有个适合初学者的教程。
 
-    传送门：[教程地址](https://github.com/getlantern/forum/issues/5620)
+    传送门：[教程地址](../Res/自己搭建ss:ssr服务器.md)
+
 
 
