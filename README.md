@@ -73,7 +73,7 @@ IT 行业相对于一般传统行业，发展更新速度更快，一旦停止�
 * [迭代器和生成器](/Article/PythonBasis/python7/Preface.md)
   - [迭代](/Article/PythonBasis/python7/1.md)
   - [Python 迭代器](/Article/PythonBasis/python7/2.md)
-  - [lsit 生成式（列表生成式）](/Article/PythonBasis/python7/3.md)
+  - [list 生成式（列表生成式）](/Article/PythonBasis/python7/3.md)
   - [生成器](/Article/PythonBasis/python7/4.md)
   - [迭代器和生成器综合例子](/Article/PythonBasis/python7/5.md)
 * [面向对象](/Article/PythonBasis/python8/Preface.md)
