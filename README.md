@@ -138,6 +138,15 @@ IT 行业相对于一般传统行业，发展更新速度更快，一旦停止�
 * [Mac中使用virtualenv和virtualenvwrapper](/Article/advanced/Mac中使用virtualenv和virtualenvwrapper.md)
 
 
+
+
+# HTML 和 CSS 入门
+
+
+# JavaScript 入门
+
+
+
 # Django
 
 Python 下有许多款不同的 Web 框架。Django 是重量级选手中最有代表性的一位。许多成功的网站和 APP 都基于 Django。
@@ -146,11 +155,6 @@ Python 下有许多款不同的 Web 框架。Django 是重量级选手中最有�
 
 * [一个完整的初学者指南Django-part1](/Article/django/一个完整的初学者指南Django-part1.md)
 * [一个完整的初学者指南Django-part2](/Article/django/一个完整的初学者指南Django-part2.md)
-
-后面经一个朋友说，这个教程已经有人在翻译了，因此我也不翻译了，不过感觉我的翻译还是挺好的，因为不是直译的，是通过了解后，用自己的语言再次表达出来。
-
-这里有上面这个教程翻译计划的 [Github](https://github.com/wzhbingo/django-beginners-guide) 以及 [博客](https://www.cloudcrossing.xyz/post/20/)，觉得哪个看得舒服，就选哪个进行学习。
-
 
 
 持续更新....
