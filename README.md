@@ -160,3 +160,7 @@ Python 下有许多款不同的 Web 框架。Django 是重量级选手中最有�
 持续更新....
 
 
+可以关注我的公众号，实时了解更新情况。
+
+![](http://twowaterimage.oss-cn-beijing.aliyuncs.com/2020-09-07-083005.jpg)
+
