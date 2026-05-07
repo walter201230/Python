@@ -128,3 +128,4 @@ rmvirtualenv [虚拟环境名称]
 ```
 deactivate
 ```
+
