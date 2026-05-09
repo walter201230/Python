@@ -190,7 +190,7 @@ print(dict1)
 |dict.clear()|删除字典内所有元素|
 |dict.copy()|返回一个字典的浅复制|
 |dict.values()|以列表返回字典中的所有值|
-|popitem()|随机返回并删除字典中的一对键和值|
+|dict.popitem()|随机返回并删除字典中的一对键和值|
 |dict.items()|以列表返回可遍历的(键, 值) 元组数组|
 
 
