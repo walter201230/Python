@@ -56,7 +56,7 @@ Traceback (most recent call last):
 ValueError: invalid literal for int() with base 10: '88.88'
 ```
 
-但这并不是意味着浮点数不能转化为整数，而是小数形式的字符串不能强转为字符串。
+但这并不是意味着浮点数不能转化为整数，而是小数形式的字符串不能强转为整数。
 
 浮点数还是可以通过 `int()`  函数转换的。
 
