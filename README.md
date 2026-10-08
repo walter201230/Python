@@ -136,6 +136,7 @@ AI 时代，我以为这个课程不会再有人看了，但没想到这个教�
 * [标准日志 logging](/Article/PythonBasis/python26/1.md)
 * [打包发布与 typer](/Article/PythonBasis/python27/1.md)
 * [学完之后做什么](/Article/PythonBasis/python28/1.md)
+* [JSON](/Article/PythonBasis/python29/1.md)
 
 
 
