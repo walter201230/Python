@@ -7,6 +7,10 @@ copyright: Copyright © 2017-2026 水哥
 
 docs_dir: Article
 
+# 保留旧网址，将在线阅读入口统一到 learn-py.org。
+hooks:
+  - tools/pages_redirects.py
+
 theme:
   name: material
   language: zh
