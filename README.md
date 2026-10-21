@@ -12,7 +12,9 @@ IT 行业相对于一般传统行业，发展更新速度更快，一旦停止�
 
 ## 旧站跳转维护
 
-`mkdocs.yml` 加载 `tools/pages_redirects.py`，构建时将页面输出为 0 秒 HTML 跳转页，同时提供 canonical 和手动链接。旧「代码规范」页面对应新站「代码可读性」课程；各章子页面汇入该章完整阅读页，不沿用旧标题锚点。未知目录会阻止构建，新增章节需同步维护映射。
+`mkdocs.yml` 加载 `tools/pages_redirects.py`，构建时生成轻量跳转页：页头同步调用 `location.replace` 尽早导航，保留 0 秒 HTML refresh、canonical 和手动链接；等待背景匹配新站默认深色，减少闪白。禁用 JavaScript 时仍可自动跳转。这仍是浏览器端跳转，无法保证所有浏览器零闪屏，也不能跨域读取新站保存的浅色偏好。
+
+旧「代码规范」页面对应新站「代码可读性」课程；各章子页面汇入该章完整阅读页，不沿用旧标题锚点。未知目录会阻止构建，新增章节需同步维护映射。
 
 GitHub Actions 在 `master` 更新后先运行 `python -B -m unittest discover -s tools -p 'test_*.py'`，通过后执行 `mkdocs build --strict` 并发布到 Pages。不要取消 Pages 发布或停用部署，否则历史链接将无法跳转。恢复正文站时移除 `mkdocs.yml` 中的跳转 hook 后重新构建部署；无需删除教程源文或改写 Git 历史。
 

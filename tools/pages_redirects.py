@@ -1,6 +1,7 @@
 """将旧 MkDocs 页面发布为 learn-py.org 跳转入口，保留教程源文件。"""
 
 from html import escape
+import json
 from pathlib import PurePosixPath
 
 
@@ -57,22 +58,36 @@ def on_page_markdown(markdown, *, page, **kwargs):
 
 
 def on_post_page(output, *, page, **kwargs):
-    target = escape(target_url(page.file.src_uri), quote=True)
+    url = target_url(page.file.src_uri)
+    target = escape(url, quote=True)
+    script_target = json.dumps(url).replace("<", "\\u003c")
     title = escape(page.title or "小白学 Python")
-    # 0 秒 meta refresh 无需 JavaScript；canonical 与手动链接使用同一目标。
+    # 在解析正文前启动导航，replace 避免返回时又经过中转页。
+    # meta refresh 为无脚本兜底；背景匹配新站默认主题，不读取另一域名的偏好。
     return f'''<!doctype html>
 <html lang="zh-CN">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    html {{ background: #020617; color: #cbd5e1; color-scheme: dark; }}
+    body {{ margin: 0; min-height: 100vh; display: grid; place-items: center;
+      font: 16px/1.7 system-ui, sans-serif; }}
+    main {{ max-width: 28rem; padding: 1.5rem; }}
+    h1 {{ font-size: 1.125rem; font-weight: 500; }}
+    a {{ color: #6ee7b7; text-underline-offset: .2em; }}
+    a:focus-visible {{ outline: 2px solid currentColor; outline-offset: 4px; }}
+  </style>
+  <link rel="preconnect" href="https://learn-py.org">
+  <script>window.location.replace({script_target});</script>
   <meta http-equiv="refresh" content="0; url={target}">
   <link rel="canonical" href="{target}">
   <title>{title} — 已迁移至小白学 Python</title>
 </head>
 <body>
   <main>
-    <h1>教程已迁移</h1>
-    <p>正在前往小白学 Python。若未自动跳转，请<a href="{target}">点击这里继续阅读</a>。</p>
+    <h1>正在打开小白学 Python…</h1>
+    <p>若未自动进入，请<a href="{target}">继续阅读教程</a>。</p>
   </main>
 </body>
 </html>

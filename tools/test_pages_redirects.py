@@ -1,7 +1,9 @@
 """跳转映射的回归检查，不访问网络。"""
 
 from html.parser import HTMLParser
+import json
 from pathlib import Path
+import re
 from types import SimpleNamespace
 import unittest
 
@@ -45,7 +47,7 @@ class RedirectTests(unittest.TestCase):
             with self.subTest(source=source), self.assertRaises(ValueError):
                 target_url(source)
 
-    def test_html_redirect_without_javascript(self):
+    def test_html_refresh_and_manual_fallback(self):
         page = SimpleNamespace(file=SimpleNamespace(src_uri="index.md"), title="<script>bad()</script>")
         html = on_post_page("原教程正文", page=page)
         parser = Tags()
@@ -53,8 +55,24 @@ class RedirectTests(unittest.TestCase):
         self.assertIn(("meta", {"http-equiv": "refresh", "content": "0; url=https://learn-py.org/"}), parser.tags)
         self.assertIn(("link", {"rel": "canonical", "href": "https://learn-py.org/"}), parser.tags)
         self.assertIn(("a", {"href": "https://learn-py.org/"}), parser.tags)
-        self.assertNotIn("script", [tag for tag, _ in parser.tags])
+        self.assertEqual([attrs for tag, attrs in parser.tags if tag == "script"], [{}])
+        self.assertIn('&lt;script&gt;bad()&lt;/script&gt;', html)
         self.assertNotIn("原教程正文", html)
+
+    def test_early_replace_preserves_all_chapter_targets(self):
+        articles = Path(__file__).resolve().parents[1] / "Article"
+        for source in articles.rglob("*.md"):
+            uri = source.relative_to(articles).as_posix()
+            page = SimpleNamespace(file=SimpleNamespace(src_uri=uri), title="课程")
+            html = on_post_page("正文", page=page)
+            script = re.search(r'<script>window\.location\.replace\((.*?)\);</script>', html)
+            with self.subTest(source=uri):
+                self.assertIsNotNone(script)
+                self.assertEqual(json.loads(script.group(1)), target_url(uri))
+                self.assertLess(script.start(), html.index('<body>'))
+                self.assertLess(html.index('background: #020617'), script.start())
+                self.assertIn('content="0; url=' + target_url(uri) + '"', html)
+                self.assertLess(len(html.encode()), 2048)
 
     def test_search_content_is_migration_notice(self):
         page = SimpleNamespace(file=SimpleNamespace(src_uri="index.md"))
