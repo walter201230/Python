@@ -14,7 +14,9 @@ IT 行业相对于一般传统行业，发展更新速度更快，一旦停止�
 
 `mkdocs.yml` 加载 `tools/pages_redirects.py`，构建时将页面输出为 0 秒 HTML 跳转页，同时提供 canonical 和手动链接。旧「代码规范」页面对应新站「代码可读性」课程；各章子页面汇入该章完整阅读页，不沿用旧标题锚点。未知目录会阻止构建，新增章节需同步维护映射。
 
-GitHub Actions 在 `master` 更新后执行 `mkdocs build` 并发布到 Pages。不要取消 Pages 发布或停用部署，否则历史链接将无法跳转。验证命令：`python3 -m unittest discover -s tools -p 'test_pages_redirects.py'`、`mkdocs build`。恢复正文站时移除 `mkdocs.yml` 中的跳转 hook 后重新构建部署；无需删除教程源文或改写 Git 历史。
+GitHub Actions 在 `master` 更新后先运行 `python -B -m unittest discover -s tools -p 'test_*.py'`，通过后执行 `mkdocs build --strict` 并发布到 Pages。不要取消 Pages 发布或停用部署，否则历史链接将无法跳转。恢复正文站时移除 `mkdocs.yml` 中的跳转 hook 后重新构建部署；无需删除教程源文或改写 Git 历史。
+
+在同时拥有两个仓库的工作区中，可额外运行 `python3 Python/tools/check_course_targets.py python-lab/web/content/lessons`（从工作区根目录执行），核验所有旧站课程目标仍有对应内容。该联合检查不进入独立仓库的生产构建链；没有旧网址的新课程允许只在学习站存在。
 
 
 
@@ -108,7 +110,7 @@ AI 时代，我以为这个课程不会再有人看了，但没想到这个教�
   - [对象的描述器](/Article/PythonBasis/python10/4.md)
   - [自定义容器（Container）](/Article/PythonBasis/python10/5.md)
   - [运算符相关的魔术方法](/Article/PythonBasis/python10/6.md)
-* [枚举类](/Article/python11/PythonBasis/Preface.md)
+* [枚举类](/Article/PythonBasis/python11/Preface.md)
   - [枚举类的使用](/Article/PythonBasis/python11/1.md)
   - [Enum 的源码](/Article/PythonBasis/python11/2.md)
   - [自定义类型的枚举](/Article/PythonBasis/python11/3.md)

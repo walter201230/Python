@@ -28,7 +28,9 @@ jobs:
           cache: pip
           cache-dependency-path: requirements-docs.txt
       - run: pip install -r requirements-docs.txt
-      - run: mkdocs build
+      - name: Validate redirects
+        run: python -B -m unittest discover -s tools -p 'test_*.py'
+      - run: mkdocs build --strict
       - uses: actions/upload-pages-artifact@v3
         with:
           path: site/
