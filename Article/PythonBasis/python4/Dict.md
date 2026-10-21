@@ -288,3 +288,38 @@ b
 
 
 
+
+
+<!-- content-completion-2026-10-22:start -->
+
+## 补充讲解与自练
+
+> 本节为本轮新增补充，以上原有文字、代码与例子逐字保留。
+
+### 同一个科目出现两次，应该覆盖还是累加
+
+假设我们记下三次学习，科目相同的记录要加在一起。这次先把需求写清楚：Python 学了两次，不能因为字典的键相同，就只留下最后一次的分钟数。
+
+```python
+records = [('Python', 15), ('读书', 10), ('Python', 5)]
+totals = {}
+for subject, minutes in records:
+    totals[subject] = totals.get(subject, 0) + minutes
+print(totals)
+print(sorted(set(subject for subject, minutes in records)))
+```
+
+输出：
+
+```text
+{'Python': 20, '读书': 10}
+['Python', '读书']
+```
+
+字典负责保存「科目对应多少分钟」，集合在这里只负责找出出现过的科目。它们解决的是不同的问题。集合本身不保证按我们输入的顺序显示，示例用 `sorted()` 得到稳定的展示顺序。
+
+自己再加一条 `('Python', 0)`，合计应该还是 `20`；再换成空记录，字典和科目列表应该分别为空。可以把右边改成直接赋值 `minutes`，观察为什么 Python 的合计变成 `5`。
+
+另外，当前 Python 的普通字典保证保持插入顺序，这不是自动按键排序。给已有键重新赋值也不等于把它排到最后。原文中若用「无序」帮助区分字典和列表，阅读时需要补上这个版本与概念边界；需要按键展示时明确排序。
+
+<!-- content-completion-2026-10-22:end -->
