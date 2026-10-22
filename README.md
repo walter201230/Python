@@ -3,24 +3,7 @@ IT 行业相对于一般传统行业，发展更新速度更快，一旦停止�
 
 自学 Python ，也是一样，不要一开始因为头脑发热就不停地收藏各种资料网站，购买各种书籍，下载了大量的教学视频，过了几天，学习的热情开始褪去，再过几个星期，终于完成了学习课程 —— 《从入门到放弃》。所以，学习 Python 需要一步一个脚印，踏踏实实地学。
 
-> 本教程基于 Python 3.10+ 编写，部分章节标注了 3.11/3.12/3.13 的新特性。在线学习统一进入 [learn-py.org](https://learn-py.org/)：
->
-> - **互动版**（推荐零基础）：[https://learn-py.org](https://learn-py.org) —— 浏览器里直接写代码、自动判分、做对一题解锁下一题，跟着练就能上手
-> - **完整阅读**（推荐系统通读 / 速查）：在课程目录点击「先通读」，无需闯关即可阅读完整讲解和练习提示。
->
-> 原 GitHub Pages 地址保留为跳转入口：首页进入新站首页，各章节进入对应的完整阅读页。教程 Markdown 源文仍保存在本仓库。
-
-## 旧站跳转维护
-
-`mkdocs.yml` 加载 `tools/pages_redirects.py`，构建时生成轻量跳转页：页头同步调用 `location.replace` 尽早导航，保留 0 秒 HTML refresh、canonical 和手动链接；等待背景匹配新站默认深色，减少闪白。禁用 JavaScript 时仍可自动跳转。这仍是浏览器端跳转，无法保证所有浏览器零闪屏，也不能跨域读取新站保存的浅色偏好。
-
-旧「代码规范」页面对应新站「代码可读性」课程；各章子页面汇入该章完整阅读页，不沿用旧标题锚点。未知目录会阻止构建，新增章节需同步维护映射。
-
-GitHub Actions 在 `master` 更新后先运行 `python -B -m unittest discover -s tools -p 'test_*.py'`，通过后执行 `mkdocs build --strict` 并发布到 Pages。不要取消 Pages 发布或停用部署，否则历史链接将无法跳转。恢复正文站时移除 `mkdocs.yml` 中的跳转 hook 后重新构建部署；无需删除教程源文或改写 Git 历史。
-
-在同时拥有两个仓库的工作区中，可额外运行 `python3 Python/tools/check_course_targets.py python-lab/web/content/lessons`（从工作区根目录执行），核验所有旧站课程目标仍有对应内容。该联合检查不进入独立仓库的生产构建链；没有旧网址的新课程允许只在学习站存在。
-
-
+开源库在线学习网站（闯关学编程）：[learn-py.org](https://learn-py.org/)
 
 # 2026 更新说明
 
@@ -36,11 +19,11 @@ AI 时代，我以为这个课程不会再有人看了，但没想到这个教�
 
 首页：会记录你的学习进度
 
-![image-20260507173345449](./images/image-20260507173345449.png)
+![小白学 Python 首页](./images/homepage-20261022.jpg)
 
 课程内容：每学完一个知识点，会有练习题，你可以在线写代码，提交代码，正确了就解锁下一部分的教程内容
 
-![image-20260507173554160](./images/image-20260507173554160.png)
+![浅色主题下的课程练习与代码编辑器](./images/lesson-light-20261022.jpg)
 
 对于初学者来说，体验一定非常的好。快去试试吧。也欢迎推荐给你的朋友。
 
@@ -156,7 +139,7 @@ AI 时代，我以为这个课程不会再有人看了，但没想到这个教�
 
 可以关注我的公众号，实时了解更新情况。
 
-<img src="http://twowaterimage.oss-cn-beijing.aliyuncs.com/2020-09-15-121312.jpg" width="50%" height="50%">
+<img src="./images/wechat-public-account.jpg" alt="GitHubClub 公众号二维码" width="50%">
 
 
 
@@ -167,12 +150,3 @@ AI 时代，我以为这个课程不会再有人看了，但没想到这个教�
 教程内容（markdown / 代码示例 / 图片）以 [CC BY 4.0](LICENSE) 协议授权。
 
 © 2017–2026 [walter201230](https://github.com/walter201230)。任何人可以自由分享和改编，仅需署名原作者。
-
-
-# 配套综合练习
-
-[学习时间记录工具](examples/study_tracker/README.md) 把变量、容器、循环、函数、文件、异常与测试串成六个阶段。参考实现只使用 Python 标准库，包含命令行入口和测试，可在本地完成添加记录、按科目统计及 JSON 保存。
-
-## 正文图示
-
-流程、变量指向和对象关系使用 [SVG 矢量图](Article/images/diagrams/)，可打开原图放大阅读。图示支持深浅色显示；文章中的文字目录仍可直接查阅。
