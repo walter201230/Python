@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="diagram" width="720" height="800" viewBox="0 0 720 800" role="img" aria-labelledby="title desc" lang="zh-CN">
+<title id="title">for 循环遍历序列</title><desc id="desc">循环变量依次绑定到取出的元素。</desc>
+<style>
+ .diagram { --paper:#ffffff; --panel:#f5f7fa; --cell:#ffffff; --ink:#1c293b; --muted:#64748b; --line:#63758c; --border:#c5cfdd; }
+ @media (prefers-color-scheme:dark) {
+ .diagram { --paper:#0c1523; --panel:#142133; --cell:#0e1929; --ink:#edf2f8; --muted:#a7b5c8; --line:#bdc9d9; --border:#465a74; }
+ }
+ text { font-family:"PingFang SC","Microsoft YaHei","Noto Sans CJK SC",sans-serif; fill:var(--ink); }
+ .title { font-size:28px; font-weight:650; }
+ .subtitle { font-size:17px; fill:var(--muted); }
+ .label { font-size:17px; font-weight:550; }
+ .small { font-size:15px; fill:var(--muted); }
+ .mono { font-family:"SFMono-Regular",Consolas,"Liberation Mono",monospace; }
+ .code { font-size:20px; }
+ .value { font-size:27px; font-weight:550; }
+ .paper { fill:var(--paper); }
+ .panel { fill:var(--panel); stroke:var(--border); stroke-width:1; }
+ .node { fill:var(--cell); stroke:var(--line); stroke-width:1.7; }
+ .arrow { fill:none; stroke:var(--line); stroke-width:2; }
+ .divider { fill:none; stroke:var(--border); stroke-width:1; }
+
+ .body {font-size:18px;} .heading {font-size:22px;font-weight:600;} .note {font-size:16px;fill:var(--muted);}</style><defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1 L7 4 L1 7" class="arrow"/></marker></defs>
+<rect width="720" height="800" rx="12" class="paper"/>
+<text x="32" y="47" class="title" text-anchor="start">for 循环遍历序列</text><text x="32" y="78" class="subtitle" text-anchor="start">循环变量依次绑定到取出的元素。</text><rect x="280" y="112" width="160" height="46" rx="8" class="node"/><text x="360.0" y="141.0" class="body" text-anchor="middle">开始</text><path d="M360 158 V190" class="arrow" marker-end="url(#arrow)"/><rect x="225" y="190" width="270" height="54" rx="8" class="node"/><text x="360.0" y="223.0" class="body" text-anchor="middle">为序列建立迭代器</text><path d="M360 244 V280" class="arrow" marker-end="url(#arrow)"/><rect x="225" y="280" width="270" height="60" rx="8" class="node"/><text x="360.0" y="316.0" class="body" text-anchor="middle">尝试取得下一个元素</text><path d="M360 340 V370" class="arrow" marker-end="url(#arrow)"/><path d="M360 370.0 L475.0 430 L360 490.0 L245.0 430 Z" class="node"/><text x="360" y="436.0" class="body" text-anchor="middle">取得元素？</text><path d="M360 490 V540" class="arrow" marker-end="url(#arrow)"/><text x="380" y="520" class="small" text-anchor="start">是</text><rect x="210" y="540" width="300" height="74" rx="8" class="node"/><text x="360.0" y="570.5" class="body" text-anchor="middle">赋值给循环变量</text><text x="360.0" y="595.5" class="body" text-anchor="middle">执行循环体</text><path d="M210 577 H100 V310 H225" class="arrow" marker-end="url(#arrow)"/><path d="M475 430 H640 V702 H440" class="arrow" marker-end="url(#arrow)"/><text x="541" y="412" class="small" text-anchor="middle">否，已耗尽</text><rect x="280" y="680" width="160" height="44" rx="8" class="node"/><text x="360.0" y="708.0" class="body" text-anchor="middle">结束</text><text x="360" y="767" class="subtitle" text-anchor="middle">每次使用一个元素，序列耗尽后结束。</text></svg>

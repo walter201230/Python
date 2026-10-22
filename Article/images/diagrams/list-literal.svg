@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="diagram" width="720" height="540" viewBox="0 0 720 540" role="img" aria-labelledby="title desc" lang="zh-CN">
+<title id="title">列表的组成</title><desc id="desc">方括号包住元素，逗号把各个元素分开。</desc>
+<style>
+ .diagram { --paper:#ffffff; --panel:#f5f7fa; --cell:#ffffff; --ink:#1c293b; --muted:#64748b; --line:#63758c; --border:#c5cfdd; }
+ @media (prefers-color-scheme:dark) {
+ .diagram { --paper:#0c1523; --panel:#142133; --cell:#0e1929; --ink:#edf2f8; --muted:#a7b5c8; --line:#bdc9d9; --border:#465a74; }
+ }
+ text { font-family:"PingFang SC","Microsoft YaHei","Noto Sans CJK SC",sans-serif; fill:var(--ink); }
+ .title { font-size:28px; font-weight:650; }
+ .subtitle { font-size:17px; fill:var(--muted); }
+ .label { font-size:17px; font-weight:550; }
+ .small { font-size:15px; fill:var(--muted); }
+ .mono { font-family:"SFMono-Regular",Consolas,"Liberation Mono",monospace; }
+ .code { font-size:20px; }
+ .value { font-size:27px; font-weight:550; }
+ .paper { fill:var(--paper); }
+ .panel { fill:var(--panel); stroke:var(--border); stroke-width:1; }
+ .node { fill:var(--cell); stroke:var(--line); stroke-width:1.7; }
+ .arrow { fill:none; stroke:var(--line); stroke-width:2; }
+ .divider { fill:none; stroke:var(--border); stroke-width:1; }
+
+ .body {font-size:18px;} .heading {font-size:22px;font-weight:600;} .note {font-size:16px;fill:var(--muted);}</style><defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1 L7 4 L1 7" class="arrow"/></marker></defs>
+<rect width="720" height="540" rx="12" class="paper"/>
+<text x="32" y="47" class="title" text-anchor="start">列表的组成</text><text x="32" y="78" class="subtitle" text-anchor="start">方括号包住元素，逗号把各个元素分开。</text><rect x="32" y="116" width="656" height="174" rx="8" class="panel"/><text x="62" y="153" class="mono code" text-anchor="start">name = [</text><text x="86" y="191" class="code" text-anchor="start">&#x27;一点水&#x27;, &#x27;两点水&#x27;, &#x27;三点水&#x27;,</text><text x="86" y="228" class="code" text-anchor="start">&#x27;四点水&#x27;, &#x27;五点水&#x27;</text><text x="62" y="265" class="mono code" text-anchor="start">]</text><rect x="32" y="318" width="312" height="82" rx="8" class="panel"/><text x="56" y="350" class="mono heading" text-anchor="start">name</text><text x="56" y="380" class="subtitle" text-anchor="start">列表名</text><rect x="376" y="318" width="312" height="82" rx="8" class="panel"/><text x="400" y="350" class="mono heading" text-anchor="start">=</text><text x="400" y="380" class="subtitle" text-anchor="start">赋值符号</text><rect x="32" y="422" width="312" height="82" rx="8" class="panel"/><text x="56" y="454" class="mono heading" text-anchor="start">[  ]</text><text x="56" y="484" class="subtitle" text-anchor="start">列表的边界</text><rect x="376" y="422" width="312" height="82" rx="8" class="panel"/><text x="400" y="454" class="mono heading" text-anchor="start">,</text><text x="400" y="484" class="subtitle" text-anchor="start">元素之间的分隔符</text></svg>

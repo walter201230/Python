@@ -4,7 +4,6 @@
 
 # 目录 #
 
-![本章思维导图](mindmap.png)
 
 - 一、Python 简介
 - 二、Python 的安装

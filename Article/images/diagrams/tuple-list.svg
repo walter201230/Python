@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="diagram" width="720" height="700" viewBox="0 0 720 700" role="img" aria-labelledby="title desc" lang="zh-CN">
+<title id="title">元组中的可变对象</title><desc id="desc">元组元素的指向不变，所指向的列表仍然可以修改。</desc>
+<style>
+ .diagram { --paper:#ffffff; --panel:#f5f7fa; --cell:#ffffff; --ink:#1c293b; --muted:#64748b; --line:#63758c; --border:#c5cfdd; }
+ @media (prefers-color-scheme:dark) {
+ .diagram { --paper:#0c1523; --panel:#142133; --cell:#0e1929; --ink:#edf2f8; --muted:#a7b5c8; --line:#bdc9d9; --border:#465a74; }
+ }
+ text { font-family:"PingFang SC","Microsoft YaHei","Noto Sans CJK SC",sans-serif; fill:var(--ink); }
+ .title { font-size:28px; font-weight:650; }
+ .subtitle { font-size:17px; fill:var(--muted); }
+ .label { font-size:17px; font-weight:550; }
+ .small { font-size:15px; fill:var(--muted); }
+ .mono { font-family:"SFMono-Regular",Consolas,"Liberation Mono",monospace; }
+ .code { font-size:20px; }
+ .value { font-size:27px; font-weight:550; }
+ .paper { fill:var(--paper); }
+ .panel { fill:var(--panel); stroke:var(--border); stroke-width:1; }
+ .node { fill:var(--cell); stroke:var(--line); stroke-width:1.7; }
+ .arrow { fill:none; stroke:var(--line); stroke-width:2; }
+ .divider { fill:none; stroke:var(--border); stroke-width:1; }
+
+ .body {font-size:18px;} .heading {font-size:22px;font-weight:600;} .note {font-size:16px;fill:var(--muted);}</style><defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1 L7 4 L1 7" class="arrow"/></marker></defs>
+<rect width="720" height="700" rx="12" class="paper"/>
+<text x="32" y="47" class="title" text-anchor="start">元组中的可变对象</text><text x="32" y="78" class="subtitle" text-anchor="start">元组元素的指向不变，所指向的列表仍然可以修改。</text><text x="70" y="134" class="mono code" text-anchor="start">tuple1</text><text x="130.0" y="169" class="mono small" text-anchor="middle">0</text><rect x="70" y="186" width="120" height="64" rx="8" class="node"/><text x="130.0" y="224.0" class="body" text-anchor="middle">&#x27;两点水&#x27;</text><text x="265.0" y="169" class="mono small" text-anchor="middle">1</text><rect x="190" y="186" width="150" height="64" rx="8" class="node"/><text x="265.0" y="224.0" class="body" text-anchor="middle">&#x27;twowater&#x27;</text><text x="445.0" y="169" class="mono small" text-anchor="middle">2</text><rect x="340" y="186" width="210" height="64" rx="8" class="node"/><text x="445.0" y="224.0" class="body" text-anchor="middle">&#x27;liangdianshui&#x27;</text><text x="600.0" y="169" class="mono small" text-anchor="middle">3</text><rect x="550" y="186" width="100" height="64" rx="8" class="node"/><text x="600.0" y="224.0" class="body" text-anchor="middle">列表</text><path d="M600 250 V308 H448 V350" class="arrow" marker-end="url(#arrow)"/><rect x="240" y="350" width="416" height="260" rx="8" class="panel"/><text x="448" y="383" class="heading" text-anchor="middle">同一个列表对象</text><text x="264" y="445" class="label" text-anchor="start">修改前</text><rect x="360" y="408" width="126" height="52" rx="8" class="node"/><text x="423.0" y="440.0" class="mono value" text-anchor="middle">123</text><rect x="486" y="408" width="126" height="52" rx="8" class="node"/><text x="549.0" y="440.0" class="mono value" text-anchor="middle">456</text><text x="448" y="490" class="small" text-anchor="middle">list1[0] = 789; list1[1] = 100</text><text x="264" y="551" class="label" text-anchor="start">修改后</text><rect x="360" y="514" width="126" height="52" rx="8" class="node"/><text x="423.0" y="546.0" class="mono value" text-anchor="middle">789</text><rect x="486" y="514" width="126" height="52" rx="8" class="node"/><text x="549.0" y="546.0" class="mono value" text-anchor="middle">100</text><rect x="56" y="423" width="112" height="52" rx="8" class="node"/><text x="112.0" y="455.0" class="mono code" text-anchor="middle">list1</text><path d="M168 449 H240" class="arrow" marker-end="url(#arrow)"/><text x="360" y="661" class="subtitle" text-anchor="middle">元组索引 3 处的指向不变，变化发生在列表内部。</text></svg>

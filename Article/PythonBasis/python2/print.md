@@ -9,11 +9,7 @@
 
 结构如下：
 
-```
-print(  动作执行的内容  )
-  ↑           ↑
- 动作      动作执行的内容
-```
+![print() 的组成](../../images/diagrams/print-call.svg)
 
 而 `print()` 函数的作用是让计算机把你给它的指令结果，显示在屏幕的终端上。这里的指令就是你在 `print()` 函数里的内容。
 
@@ -37,17 +33,7 @@ Hello Python
 
 流程示意：
 
-```
-print('Hello Python')  ──向解释器发出指令──▶  Python 解释器
-                                                  │
-                                       解析为机器语言
-                                                  ▼
-                                              计算机
-                                                  │
-                                       执行完打印结果
-                                                  ▼
-                                          Hello Python
-```
+![从调用到输出](../../images/diagrams/print-execution.svg)
 
 可能这里有人会问，为什么要加单引号，直接  `print(Hello Python)` 不行吗？
 

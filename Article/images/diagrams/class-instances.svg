@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="diagram" width="720" height="640" viewBox="0 0 720 640" role="img" aria-labelledby="title desc" lang="zh-CN">
+<title id="title">从类到实例</title><desc id="desc">同一个类可以创建多个实例。</desc>
+<style>
+ .diagram { --paper:#ffffff; --panel:#f5f7fa; --cell:#ffffff; --ink:#1c293b; --muted:#64748b; --line:#63758c; --border:#c5cfdd; }
+ @media (prefers-color-scheme:dark) {
+ .diagram { --paper:#0c1523; --panel:#142133; --cell:#0e1929; --ink:#edf2f8; --muted:#a7b5c8; --line:#bdc9d9; --border:#465a74; }
+ }
+ text { font-family:"PingFang SC","Microsoft YaHei","Noto Sans CJK SC",sans-serif; fill:var(--ink); }
+ .title { font-size:28px; font-weight:650; }
+ .subtitle { font-size:17px; fill:var(--muted); }
+ .label { font-size:17px; font-weight:550; }
+ .small { font-size:15px; fill:var(--muted); }
+ .mono { font-family:"SFMono-Regular",Consolas,"Liberation Mono",monospace; }
+ .code { font-size:20px; }
+ .value { font-size:27px; font-weight:550; }
+ .paper { fill:var(--paper); }
+ .panel { fill:var(--panel); stroke:var(--border); stroke-width:1; }
+ .node { fill:var(--cell); stroke:var(--line); stroke-width:1.7; }
+ .arrow { fill:none; stroke:var(--line); stroke-width:2; }
+ .divider { fill:none; stroke:var(--border); stroke-width:1; }
+
+ .body {font-size:18px;} .heading {font-size:22px;font-weight:600;} .note {font-size:16px;fill:var(--muted);}</style><defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1 L7 4 L1 7" class="arrow"/></marker></defs>
+<rect width="720" height="640" rx="12" class="paper"/>
+<text x="32" y="47" class="title" text-anchor="start">从类到实例</text><text x="32" y="78" class="subtitle" text-anchor="start">同一个类可以创建多个实例。</text><rect x="48" y="244" width="232" height="164" rx="8" class="panel"/><text x="164" y="302" class="heading" text-anchor="middle">类</text><text x="164" y="352" class="body" text-anchor="middle">属性与方法的定义</text><path d="M280 326 H354 V205" class="arrow"/><path d="M354 326 V465" class="arrow"/><path d="M354 205 H440" class="arrow" marker-end="url(#arrow)"/><path d="M354 465 H440" class="arrow" marker-end="url(#arrow)"/><text x="338" y="301" class="small" text-anchor="end">实例化</text><rect x="440" y="130" width="232" height="150" rx="8" class="panel"/><text x="556.0" y="186.0" class="body" text-anchor="middle">对象 1</text><text x="556.0" y="211.0" class="body" text-anchor="middle">自己的实例属性</text><text x="556.0" y="236.0" class="body" text-anchor="middle">通过类使用方法</text><rect x="440" y="390" width="232" height="150" rx="8" class="panel"/><text x="556.0" y="446.0" class="body" text-anchor="middle">对象 2</text><text x="556.0" y="471.0" class="body" text-anchor="middle">自己的实例属性</text><text x="556.0" y="496.0" class="body" text-anchor="middle">通过类使用方法</text><text x="360" y="602" class="subtitle" text-anchor="middle">多个实例可以有各自的数据，方法通常定义在类上。</text></svg>

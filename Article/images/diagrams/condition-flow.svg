@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="diagram" width="720" height="942" viewBox="0 0 720 942" role="img" aria-labelledby="title desc" lang="zh-CN">
+<title id="title">Condition 条件变量</title><desc id="desc">通知、重新获得锁和条件满足，是三个不同的步骤。</desc>
+<style>
+ .diagram { --paper:#ffffff; --panel:#f5f7fa; --cell:#ffffff; --ink:#1c293b; --muted:#64748b; --line:#63758c; --border:#c5cfdd; }
+ @media (prefers-color-scheme:dark) {
+ .diagram { --paper:#0c1523; --panel:#142133; --cell:#0e1929; --ink:#edf2f8; --muted:#a7b5c8; --line:#bdc9d9; --border:#465a74; }
+ }
+ text { font-family:"PingFang SC","Microsoft YaHei","Noto Sans CJK SC",sans-serif; fill:var(--ink); }
+ .title { font-size:28px; font-weight:650; }
+ .subtitle { font-size:17px; fill:var(--muted); }
+ .label { font-size:17px; font-weight:550; }
+ .small { font-size:15px; fill:var(--muted); }
+ .mono { font-family:"SFMono-Regular",Consolas,"Liberation Mono",monospace; }
+ .code { font-size:20px; }
+ .value { font-size:27px; font-weight:550; }
+ .paper { fill:var(--paper); }
+ .panel { fill:var(--panel); stroke:var(--border); stroke-width:1; }
+ .node { fill:var(--cell); stroke:var(--line); stroke-width:1.7; }
+ .arrow { fill:none; stroke:var(--line); stroke-width:2; }
+ .divider { fill:none; stroke:var(--border); stroke-width:1; }
+
+ .body {font-size:18px;} .heading {font-size:22px;font-weight:600;} .note {font-size:16px;fill:var(--muted);}</style><defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1 L7 4 L1 7" class="arrow"/></marker></defs>
+<rect width="720" height="942" rx="12" class="paper"/>
+<text x="32" y="47" class="title" text-anchor="start">Condition 条件变量</text><text x="32" y="78" class="subtitle" text-anchor="start">通知、重新获得锁和条件满足，是三个不同的步骤。</text><text x="186" y="120" class="heading" text-anchor="middle">等待线程</text><text x="544" y="120" class="heading" text-anchor="middle">修改条件的线程</text><rect x="54" y="152" width="264" height="60" rx="8" class="node"/><text x="186.0" y="188.0" class="body" text-anchor="middle">获得 Condition 的锁</text><path d="M186 212 V260" class="arrow" marker-end="url(#arrow)"/><rect x="54" y="260" width="264" height="92" rx="8" class="node"/><text x="186.0" y="299.5" class="body" text-anchor="middle">条件不满足时调用 wait()</text><text x="186.0" y="324.5" class="body" text-anchor="middle">释放锁，进入等待</text><path d="M186 352 V604" class="arrow" marker-end="url(#arrow)"/><text x="204" y="448" class="small" text-anchor="start">收到通知后，</text><text x="204" y="474" class="small" text-anchor="start">还需重新获得锁。</text><rect x="412" y="260" width="264" height="60" rx="8" class="node"/><text x="544.0" y="296.0" class="body" text-anchor="middle">获得同一把锁</text><path d="M544 320 V356" class="arrow" marker-end="url(#arrow)"/><rect x="412" y="356" width="264" height="60" rx="8" class="node"/><text x="544.0" y="392.0" class="body" text-anchor="middle">修改共享状态</text><path d="M544 416 V452" class="arrow" marker-end="url(#arrow)"/><rect x="412" y="452" width="264" height="60" rx="8" class="node"/><text x="544.0" y="488.0" class="body" text-anchor="middle">调用 notify()</text><path d="M412 482 H326 V306 H318" class="arrow" marker-end="url(#arrow)" stroke-dasharray="6 5"/><text x="336" y="400" class="small" text-anchor="start">通知</text><path d="M544 512 V548" class="arrow" marker-end="url(#arrow)"/><rect x="412" y="548" width="264" height="60" rx="8" class="node"/><text x="544.0" y="584.0" class="body" text-anchor="middle">释放锁</text><rect x="54" y="604" width="264" height="70" rx="8" class="node"/><text x="186.0" y="645.0" class="body" text-anchor="middle">重新获得锁后，wait() 返回</text><path d="M544 608 V639 H318" class="arrow" marker-end="url(#arrow)" stroke-dasharray="6 5"/><text x="370" y="625" class="small" text-anchor="start">锁释放后</text><path d="M186 674 V710" class="arrow" marker-end="url(#arrow)"/><rect x="54" y="710" width="264" height="82" rx="8" class="node"/><text x="186.0" y="744.5" class="body" text-anchor="middle">再次检查条件</text><text x="186.0" y="769.5" class="body" text-anchor="middle">不满足则继续等待</text><path d="M186 792 V828" class="arrow" marker-end="url(#arrow)"/><rect x="54" y="828" width="264" height="70" rx="8" class="node"/><text x="186.0" y="856.5" class="body" text-anchor="middle">条件满足后执行操作</text><text x="186.0" y="881.5" class="body" text-anchor="middle">完成后释放锁</text><text x="412" y="748" class="note" text-anchor="start">notify() 不会释放锁。</text><text x="412" y="779" class="note" text-anchor="start">等待线程必须在锁内</text><text x="412" y="807" class="note" text-anchor="start">用 while 重新检查条件。</text></svg>

@@ -17,7 +17,6 @@
 
 # 目录 #
 
-![本章思维导图](mindmap.png)
 
 - 一、字典（Dictionary）
     1. 什么是 dict（字典）

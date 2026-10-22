@@ -133,7 +133,7 @@ print(tuple1)
 
 可以看到，两次输出的 tuple 值是变了的。我们看看 tuple1 的存储是怎样的。
 
-![修改 tuple 的存储结构](tuple_struct.png)
+![元组中的可变对象](../../images/diagrams/tuple-list.svg)
 
 可以看到，tuple1 有四个元素，最后一个元素是一个 List ，List 列表里有两个元素。
 

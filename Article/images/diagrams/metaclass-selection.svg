@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="diagram" width="720" height="900" viewBox="0 0 720 900" role="img" aria-labelledby="title desc" lang="zh-CN">
+<title id="title">Python 3 的元类选择</title><desc id="desc">通过 metaclass 参数指定，或依据基类的元类确定。</desc>
+<style>
+ .diagram { --paper:#ffffff; --panel:#f5f7fa; --cell:#ffffff; --ink:#1c293b; --muted:#64748b; --line:#63758c; --border:#c5cfdd; }
+ @media (prefers-color-scheme:dark) {
+ .diagram { --paper:#0c1523; --panel:#142133; --cell:#0e1929; --ink:#edf2f8; --muted:#a7b5c8; --line:#bdc9d9; --border:#465a74; }
+ }
+ text { font-family:"PingFang SC","Microsoft YaHei","Noto Sans CJK SC",sans-serif; fill:var(--ink); }
+ .title { font-size:28px; font-weight:650; }
+ .subtitle { font-size:17px; fill:var(--muted); }
+ .label { font-size:17px; font-weight:550; }
+ .small { font-size:15px; fill:var(--muted); }
+ .mono { font-family:"SFMono-Regular",Consolas,"Liberation Mono",monospace; }
+ .code { font-size:20px; }
+ .value { font-size:27px; font-weight:550; }
+ .paper { fill:var(--paper); }
+ .panel { fill:var(--panel); stroke:var(--border); stroke-width:1; }
+ .node { fill:var(--cell); stroke:var(--line); stroke-width:1.7; }
+ .arrow { fill:none; stroke:var(--line); stroke-width:2; }
+ .divider { fill:none; stroke:var(--border); stroke-width:1; }
+
+ .body {font-size:18px;} .heading {font-size:22px;font-weight:600;} .note {font-size:16px;fill:var(--muted);}</style><defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1 L7 4 L1 7" class="arrow"/></marker></defs>
+<rect width="720" height="900" rx="12" class="paper"/>
+<text x="32" y="47" class="title" text-anchor="start">Python 3 的元类选择</text><text x="32" y="78" class="subtitle" text-anchor="start">通过 metaclass 参数指定，或依据基类的元类确定。</text><rect x="100" y="114" width="520" height="62" rx="8" class="node"/><text x="360.0" y="151.0" class="body" text-anchor="middle">执行类定义（Python 3）</text><path d="M360 176 V200" class="arrow" marker-end="url(#arrow)"/><path d="M360 200.0 L500.0 270 L360 340.0 L220.0 270 Z" class="node"/><text x="360" y="264.0" class="body" text-anchor="middle">显式元类存在，且</text><text x="360" y="288.0" class="body" text-anchor="middle">不是 type 的实例？</text><path d="M220 270 H164 V394" class="arrow" marker-end="url(#arrow)"/><text x="174" y="307" class="small" text-anchor="start">是</text><path d="M500 270 H544 V394" class="arrow" marker-end="url(#arrow)"/><text x="556" y="307" class="small" text-anchor="start">否</text><rect x="32" y="394" width="264" height="70" rx="8" class="node"/><text x="164.0" y="435.0" class="body" text-anchor="middle">采用显式元类</text><rect x="400" y="394" width="288" height="78" rx="8" class="node"/><text x="544.0" y="426.5" class="body" text-anchor="middle">收集显式元类与</text><text x="544.0" y="451.5" class="body" text-anchor="middle">各基类的元类</text><path d="M544 472 V510" class="arrow" marker-end="url(#arrow)"/><path d="M544 510.0 L676.0 575 L544 640.0 L412.0 575 Z" class="node"/><text x="544" y="569.0" class="body" text-anchor="middle">有兼容的</text><text x="544" y="593.0" class="body" text-anchor="middle">最派生元类？</text><path d="M412 575 H296" class="arrow" marker-end="url(#arrow)"/><text x="352" y="556" class="small" text-anchor="middle">是</text><rect x="32" y="540" width="264" height="70" rx="8" class="node"/><text x="164.0" y="581.0" class="body" text-anchor="middle">选择这个元类</text><path d="M544 640 V720" class="arrow" marker-end="url(#arrow)"/><text x="560" y="682" class="small" text-anchor="start">否</text><rect x="400" y="720" width="288" height="70" rx="8" class="node"/><text x="544.0" y="761.0" class="code" text-anchor="middle">抛出 TypeError</text><path d="M164 610 V720" class="arrow" marker-end="url(#arrow)"/><path d="M32 429 H16 V755 H32" class="arrow" marker-end="url(#arrow)"/><rect x="32" y="720" width="264" height="70" rx="8" class="node"/><text x="164.0" y="748.5" class="body" text-anchor="middle">准备命名空间</text><text x="164.0" y="773.5" class="body" text-anchor="middle">执行类体并创建类</text><text x="32" y="835" class="note" text-anchor="start">没有基类且未指定元类时，默认使用 type。</text><text x="32" y="864" class="note" text-anchor="start">类体中的 __metaclass__ 赋值不用于指定 Python 3 元类。</text></svg>

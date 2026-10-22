@@ -9,7 +9,6 @@ Python 界的领袖 Tim Peters 说的：
 
 # 目录 #
 
-![本章思维导图](mindmap.png)
 
 这一篇的目录如下：
 

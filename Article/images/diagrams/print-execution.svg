@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="diagram" width="720" height="530" viewBox="0 0 720 530" role="img" aria-labelledby="title desc" lang="zh-CN">
+<title id="title">从调用到输出</title><desc id="desc">运行这一行代码，得到一行文字。</desc>
+<style>
+ .diagram { --paper:#ffffff; --panel:#f5f7fa; --cell:#ffffff; --ink:#1c293b; --muted:#64748b; --line:#63758c; --border:#c5cfdd; }
+ @media (prefers-color-scheme:dark) {
+ .diagram { --paper:#0c1523; --panel:#142133; --cell:#0e1929; --ink:#edf2f8; --muted:#a7b5c8; --line:#bdc9d9; --border:#465a74; }
+ }
+ text { font-family:"PingFang SC","Microsoft YaHei","Noto Sans CJK SC",sans-serif; fill:var(--ink); }
+ .title { font-size:28px; font-weight:650; }
+ .subtitle { font-size:17px; fill:var(--muted); }
+ .label { font-size:17px; font-weight:550; }
+ .small { font-size:15px; fill:var(--muted); }
+ .mono { font-family:"SFMono-Regular",Consolas,"Liberation Mono",monospace; }
+ .code { font-size:20px; }
+ .value { font-size:27px; font-weight:550; }
+ .paper { fill:var(--paper); }
+ .panel { fill:var(--panel); stroke:var(--border); stroke-width:1; }
+ .node { fill:var(--cell); stroke:var(--line); stroke-width:1.7; }
+ .arrow { fill:none; stroke:var(--line); stroke-width:2; }
+ .divider { fill:none; stroke:var(--border); stroke-width:1; }
+
+ .body {font-size:18px;} .heading {font-size:22px;font-weight:600;} .note {font-size:16px;fill:var(--muted);}</style><defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1 L7 4 L1 7" class="arrow"/></marker></defs>
+<rect width="720" height="530" rx="12" class="paper"/>
+<text x="32" y="47" class="title" text-anchor="start">从调用到输出</text><text x="32" y="78" class="subtitle" text-anchor="start">运行这一行代码，得到一行文字。</text><rect x="130" y="122" width="460" height="70" rx="8" class="node"/><text x="360.0" y="163.0" class="mono code" text-anchor="middle">print(&#x27;Hello Python&#x27;)</text><path d="M360 192 V242" class="arrow" marker-end="url(#arrow)"/><rect x="180" y="242" width="360" height="70" rx="8" class="node"/><text x="360.0" y="270.5" class="body" text-anchor="middle">Python 解释器</text><text x="360.0" y="295.5" class="body" text-anchor="middle">执行 print() 调用</text><path d="M360 312 V362" class="arrow" marker-end="url(#arrow)"/><rect x="180" y="362" width="360" height="70" rx="8" class="node"/><text x="360.0" y="390.5" class="body" text-anchor="middle">标准输出</text><text x="360.0" y="415.5" class="body" text-anchor="middle">Hello Python</text><text x="360" y="493" class="subtitle" text-anchor="middle">print() 把文字写到标准输出。</text></svg>

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="diagram" width="720" height="610" viewBox="0 0 720 610" role="img" aria-labelledby="title desc" lang="zh-CN">
+<title id="title">循环的基本流程</title><desc id="desc">执行循环体后，返回条件判断。</desc>
+<style>
+ .diagram { --paper:#ffffff; --panel:#f5f7fa; --cell:#ffffff; --ink:#1c293b; --muted:#64748b; --line:#63758c; --border:#c5cfdd; }
+ @media (prefers-color-scheme:dark) {
+ .diagram { --paper:#0c1523; --panel:#142133; --cell:#0e1929; --ink:#edf2f8; --muted:#a7b5c8; --line:#bdc9d9; --border:#465a74; }
+ }
+ text { font-family:"PingFang SC","Microsoft YaHei","Noto Sans CJK SC",sans-serif; fill:var(--ink); }
+ .title { font-size:28px; font-weight:650; }
+ .subtitle { font-size:17px; fill:var(--muted); }
+ .label { font-size:17px; font-weight:550; }
+ .small { font-size:15px; fill:var(--muted); }
+ .mono { font-family:"SFMono-Regular",Consolas,"Liberation Mono",monospace; }
+ .code { font-size:20px; }
+ .value { font-size:27px; font-weight:550; }
+ .paper { fill:var(--paper); }
+ .panel { fill:var(--panel); stroke:var(--border); stroke-width:1; }
+ .node { fill:var(--cell); stroke:var(--line); stroke-width:1.7; }
+ .arrow { fill:none; stroke:var(--line); stroke-width:2; }
+ .divider { fill:none; stroke:var(--border); stroke-width:1; }
+
+ .body {font-size:18px;} .heading {font-size:22px;font-weight:600;} .note {font-size:16px;fill:var(--muted);}</style><defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1 L7 4 L1 7" class="arrow"/></marker></defs>
+<rect width="720" height="610" rx="12" class="paper"/>
+<text x="32" y="47" class="title" text-anchor="start">循环的基本流程</text><text x="32" y="78" class="subtitle" text-anchor="start">执行循环体后，返回条件判断。</text><rect x="230" y="112" width="160" height="46" rx="8" class="node"/><text x="310.0" y="141.0" class="body" text-anchor="middle">开始</text><path d="M310 158 V195" class="arrow" marker-end="url(#arrow)"/><path d="M310 195.0 L420.0 260 L310 325.0 L200.0 260 Z" class="node"/><text x="310" y="266.0" class="body" text-anchor="middle">条件成立？</text><path d="M420 260 H500" class="arrow" marker-end="url(#arrow)"/><text x="454" y="242" class="small" text-anchor="middle">是</text><rect x="500" y="225" width="160" height="70" rx="8" class="node"/><text x="580.0" y="266.0" class="body" text-anchor="middle">执行循环体</text><path d="M660 260 H682 V178 H310 V195" class="arrow" marker-end="url(#arrow)"/><path d="M310 325 V460" class="arrow" marker-end="url(#arrow)"/><text x="330" y="391" class="small" text-anchor="start">否</text><rect x="230" y="460" width="160" height="46" rx="8" class="node"/><text x="310.0" y="489.0" class="body" text-anchor="middle">结束</text><text x="360" y="564" class="subtitle" text-anchor="middle">每轮重新判断条件，不成立时退出循环。</text></svg>

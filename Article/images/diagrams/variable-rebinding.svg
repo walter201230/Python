@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="diagram" width="720" height="620" viewBox="0 0 720 620" role="img" aria-labelledby="rebinding-title rebinding-desc" lang="zh-CN">
+<title id="rebinding-title">变量重新指向</title>
+<desc id="rebinding-desc">执行 a = 1 后，变量 a 指向整数 1。再执行 a = 1000 后，a 改为指向整数 1000。两幅图表示操作前后，不表示同时指向两个对象。</desc>
+<style>
+ .diagram { --paper:#ffffff; --panel:#f5f7fa; --cell:#ffffff; --ink:#1c293b; --muted:#64748b; --line:#63758c; --border:#c5cfdd; }
+ @media (prefers-color-scheme:dark) {
+ .diagram { --paper:#0c1523; --panel:#142133; --cell:#0e1929; --ink:#edf2f8; --muted:#a7b5c8; --line:#bdc9d9; --border:#465a74; }
+ }
+ text { font-family:"PingFang SC","Microsoft YaHei","Noto Sans CJK SC",sans-serif; fill:var(--ink); }
+ .title { font-size:28px; font-weight:650; }
+ .subtitle { font-size:17px; fill:var(--muted); }
+ .label { font-size:17px; font-weight:550; }
+ .small { font-size:15px; fill:var(--muted); }
+ .mono { font-family:"SFMono-Regular",Consolas,"Liberation Mono",monospace; }
+ .code { font-size:20px; }
+ .value { font-size:27px; font-weight:550; }
+ .paper { fill:var(--paper); }
+ .panel { fill:var(--panel); stroke:var(--border); stroke-width:1; }
+ .node { fill:var(--cell); stroke:var(--line); stroke-width:1.7; }
+ .arrow { fill:none; stroke:var(--line); stroke-width:2; }
+ .divider { fill:none; stroke:var(--border); stroke-width:1; }
+</style>
+<defs><marker id="rebinding-arrow" markerWidth="8" markerHeight="8" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1 L7 4 L1 7" class="arrow"/></marker></defs>
+<rect width="720" height="620" rx="12" class="paper"/>
+<text x="32" y="47" class="title" text-anchor="start">变量重新指向</text>
+<text x="32" y="78" class="subtitle" text-anchor="start">重新赋值，改变的是变量 a 的绑定。</text>
+<rect x="32" y="112" width="656" height="162" rx="10" class="panel"/>
+<text x="54" y="143" class="label" text-anchor="start">赋值前</text>
+<text x="140" y="174" class="small" text-anchor="middle">变量名</text>
+<text x="537" y="174" class="small" text-anchor="middle">整数对象</text>
+<rect x="100" y="191" width="80" height="56" rx="7" class="node"/>
+<text x="140" y="228" class="mono value" text-anchor="middle">a</text>
+<path d="M180 219 H460" class="arrow" marker-end="url(#rebinding-arrow)"/>
+<text x="320" y="206" class="small" text-anchor="middle">指向</text>
+<rect x="460" y="191" width="154" height="56" rx="7" class="node"/>
+<text x="537" y="228" class="mono value" text-anchor="middle">1</text>
+<rect x="32" y="364" width="656" height="162" rx="10" class="panel"/>
+<text x="54" y="395" class="label" text-anchor="start">赋值后</text>
+<text x="140" y="426" class="small" text-anchor="middle">变量名</text>
+<text x="537" y="426" class="small" text-anchor="middle">整数对象</text>
+<rect x="100" y="443" width="80" height="56" rx="7" class="node"/>
+<text x="140" y="480" class="mono value" text-anchor="middle">a</text>
+<path d="M180 471 H460" class="arrow" marker-end="url(#rebinding-arrow)"/>
+<text x="320" y="458" class="small" text-anchor="middle">指向</text>
+<rect x="460" y="443" width="154" height="56" rx="7" class="node"/>
+<text x="537" y="480" class="mono value" text-anchor="middle">1000</text>
+<text x="634" y="143" class="mono code" text-anchor="end">a = 1</text>
+<path d="M360 274 V297 M360 341 V364" class="arrow" marker-end="url(#rebinding-arrow)"/>
+<rect x="231" y="297" width="258" height="44" rx="6" class="node"/>
+<text x="360" y="326" class="mono code" text-anchor="middle">a = 1000</text>
+<path d="M32 557 H688" class="divider"/>
+<text x="32" y="589" class="subtitle" text-anchor="start">a 重新绑定到整数对象 1000，整数 1 本身没有改变。</text>
+</svg>

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="diagram" width="720" height="770" viewBox="0 0 720 770" role="img" aria-labelledby="title desc" lang="zh-CN">
+<title id="title">实例的创建与初始化</title><desc id="desc">一般先创建对象，再初始化；返回其他类型时跳过初始化。</desc>
+<style>
+ .diagram { --paper:#ffffff; --panel:#f5f7fa; --cell:#ffffff; --ink:#1c293b; --muted:#64748b; --line:#63758c; --border:#c5cfdd; }
+ @media (prefers-color-scheme:dark) {
+ .diagram { --paper:#0c1523; --panel:#142133; --cell:#0e1929; --ink:#edf2f8; --muted:#a7b5c8; --line:#bdc9d9; --border:#465a74; }
+ }
+ text { font-family:"PingFang SC","Microsoft YaHei","Noto Sans CJK SC",sans-serif; fill:var(--ink); }
+ .title { font-size:28px; font-weight:650; }
+ .subtitle { font-size:17px; fill:var(--muted); }
+ .label { font-size:17px; font-weight:550; }
+ .small { font-size:15px; fill:var(--muted); }
+ .mono { font-family:"SFMono-Regular",Consolas,"Liberation Mono",monospace; }
+ .code { font-size:20px; }
+ .value { font-size:27px; font-weight:550; }
+ .paper { fill:var(--paper); }
+ .panel { fill:var(--panel); stroke:var(--border); stroke-width:1; }
+ .node { fill:var(--cell); stroke:var(--line); stroke-width:1.7; }
+ .arrow { fill:none; stroke:var(--line); stroke-width:2; }
+ .divider { fill:none; stroke:var(--border); stroke-width:1; }
+
+ .body {font-size:18px;} .heading {font-size:22px;font-weight:600;} .note {font-size:16px;fill:var(--muted);}</style><defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1 L7 4 L1 7" class="arrow"/></marker></defs>
+<rect width="720" height="770" rx="12" class="paper"/>
+<text x="32" y="47" class="title" text-anchor="start">实例的创建与初始化</text><text x="32" y="78" class="subtitle" text-anchor="start">一般先创建对象，再初始化；返回其他类型时跳过初始化。</text><rect x="120" y="116" width="480" height="62" rx="8" class="node"/><text x="360.0" y="153.0" class="mono code" text-anchor="middle">User(&#x27;两点水&#x27;, 23)</text><path d="M360 178 V216" class="arrow" marker-end="url(#arrow)"/><rect x="200" y="216" width="320" height="62" rx="8" class="node"/><text x="360.0" y="253.0" class="code" text-anchor="middle">__new__ 返回一个对象</text><path d="M360 278 V310" class="arrow" marker-end="url(#arrow)"/><path d="M360 310.0 L490.0 375 L360 440.0 L230.0 375 Z" class="node"/><text x="360" y="369.0" class="body" text-anchor="middle">返回的是本类</text><text x="360" y="393.0" class="body" text-anchor="middle">或子类的实例？</text><path d="M360 440 V505" class="arrow" marker-end="url(#arrow)"/><text x="380" y="480" class="small" text-anchor="start">是</text><rect x="200" y="505" width="320" height="70" rx="8" class="node"/><text x="360.0" y="533.5" class="body" text-anchor="middle">调用 __init__</text><text x="360.0" y="558.5" class="body" text-anchor="middle">初始化该实例</text><path d="M360 575 V615" class="arrow" marker-end="url(#arrow)"/><path d="M490 375 H646 V648 H480" class="arrow" marker-end="url(#arrow)"/><text x="546" y="357" class="small" text-anchor="middle">否</text><rect x="240" y="615" width="240" height="66" rx="8" class="node"/><text x="360.0" y="654.0" class="body" text-anchor="middle">返回对象</text><text x="360" y="731" class="subtitle" text-anchor="middle">__init__ 负责初始化，不负责返回实例。</text></svg>

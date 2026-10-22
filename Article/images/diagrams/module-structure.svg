@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="diagram" width="720" height="630" viewBox="0 0 720 630" role="img" aria-labelledby="title desc" lang="zh-CN">
+<title id="title">模块的组成</title><desc id="desc">把相关定义放进模块，便于组织与复用。</desc>
+<style>
+ .diagram { --paper:#ffffff; --panel:#f5f7fa; --cell:#ffffff; --ink:#1c293b; --muted:#64748b; --line:#63758c; --border:#c5cfdd; }
+ @media (prefers-color-scheme:dark) {
+ .diagram { --paper:#0c1523; --panel:#142133; --cell:#0e1929; --ink:#edf2f8; --muted:#a7b5c8; --line:#bdc9d9; --border:#465a74; }
+ }
+ text { font-family:"PingFang SC","Microsoft YaHei","Noto Sans CJK SC",sans-serif; fill:var(--ink); }
+ .title { font-size:28px; font-weight:650; }
+ .subtitle { font-size:17px; fill:var(--muted); }
+ .label { font-size:17px; font-weight:550; }
+ .small { font-size:15px; fill:var(--muted); }
+ .mono { font-family:"SFMono-Regular",Consolas,"Liberation Mono",monospace; }
+ .code { font-size:20px; }
+ .value { font-size:27px; font-weight:550; }
+ .paper { fill:var(--paper); }
+ .panel { fill:var(--panel); stroke:var(--border); stroke-width:1; }
+ .node { fill:var(--cell); stroke:var(--line); stroke-width:1.7; }
+ .arrow { fill:none; stroke:var(--line); stroke-width:2; }
+ .divider { fill:none; stroke:var(--border); stroke-width:1; }
+
+ .body {font-size:18px;} .heading {font-size:22px;font-weight:600;} .note {font-size:16px;fill:var(--muted);}</style><defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1 L7 4 L1 7" class="arrow"/></marker></defs>
+<rect width="720" height="630" rx="12" class="paper"/>
+<text x="32" y="47" class="title" text-anchor="start">模块的组成</text><text x="32" y="78" class="subtitle" text-anchor="start">把相关定义放进模块，便于组织与复用。</text><rect x="48" y="120" width="624" height="432" rx="8" class="panel"/><text x="360" y="158" class="heading" text-anchor="middle">模块</text><rect x="80" y="190" width="264" height="70" rx="8" class="node"/><text x="212.0" y="231.0" class="body" text-anchor="middle">变量</text><rect x="376" y="190" width="264" height="70" rx="8" class="node"/><text x="508.0" y="231.0" class="body" text-anchor="middle">函数</text><rect x="80" y="296" width="560" height="224" rx="8" class="node"/><text x="360" y="334" class="heading" text-anchor="middle">类</text><rect x="110" y="362" width="230" height="126" rx="8" class="panel"/><text x="225.0" y="418.5" class="body" text-anchor="middle">属性</text><text x="225.0" y="443.5" class="body" text-anchor="middle">变量 1、变量 2、…</text><rect x="380" y="362" width="230" height="126" rx="8" class="panel"/><text x="495.0" y="418.5" class="body" text-anchor="middle">方法</text><text x="495.0" y="443.5" class="body" text-anchor="middle">函数 1、函数 2、…</text><text x="360" y="595" class="subtitle" text-anchor="middle">模块可以组织变量、函数和类。</text></svg>

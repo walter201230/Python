@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="diagram" width="720" height="620" viewBox="0 0 720 620" role="img" aria-labelledby="mutation-title mutation-desc" lang="zh-CN">
+<title id="mutation-title">列表原地修改</title>
+<desc id="mutation-desc">变量 a 指向列表 [1, 2, 3, 4, 5, 6]。执行 a[2] = 5 后，同一个列表变成 [1, 2, 5, 4, 5, 6]，a 的指向保持不变。索引 2 的格子用加粗边框标出。</desc>
+<style>
+ .diagram { --paper:#ffffff; --panel:#f5f7fa; --cell:#ffffff; --ink:#1c293b; --muted:#64748b; --line:#63758c; --border:#c5cfdd; }
+ @media (prefers-color-scheme:dark) {
+ .diagram { --paper:#0c1523; --panel:#142133; --cell:#0e1929; --ink:#edf2f8; --muted:#a7b5c8; --line:#bdc9d9; --border:#465a74; }
+ }
+ text { font-family:"PingFang SC","Microsoft YaHei","Noto Sans CJK SC",sans-serif; fill:var(--ink); }
+ .title { font-size:28px; font-weight:650; }
+ .subtitle { font-size:17px; fill:var(--muted); }
+ .label { font-size:17px; font-weight:550; }
+ .small { font-size:15px; fill:var(--muted); }
+ .mono { font-family:"SFMono-Regular",Consolas,"Liberation Mono",monospace; }
+ .code { font-size:20px; }
+ .value { font-size:27px; font-weight:550; }
+ .paper { fill:var(--paper); }
+ .panel { fill:var(--panel); stroke:var(--border); stroke-width:1; }
+ .node { fill:var(--cell); stroke:var(--line); stroke-width:1.7; }
+ .arrow { fill:none; stroke:var(--line); stroke-width:2; }
+ .divider { fill:none; stroke:var(--border); stroke-width:1; }
+</style>
+<defs><marker id="mutation-arrow" markerWidth="8" markerHeight="8" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1 L7 4 L1 7" class="arrow"/></marker></defs>
+<rect width="720" height="620" rx="12" class="paper"/>
+<text x="32" y="47" class="title" text-anchor="start">列表原地修改</text>
+<text x="32" y="78" class="subtitle" text-anchor="start">a 仍指向同一个列表，改变的是其中一个元素。</text>
+<rect x="32" y="112" width="656" height="162" rx="10" class="panel"/>
+<text x="54" y="143" class="label" text-anchor="start">修改前</text>
+<text x="90" y="174" class="small" text-anchor="middle">变量名</text>
+<rect x="56" y="191" width="68" height="56" rx="7" class="node"/>
+<text x="90" y="228" class="mono value" text-anchor="middle">a</text>
+<path d="M124 219 H224" class="arrow" marker-end="url(#mutation-arrow)"/>
+<text x="174" y="202" class="small" text-anchor="middle">指向</text>
+<rect x="224" y="191" width="408" height="56" rx="0" class="node"/>
+<text x="258" y="179" class="mono small" text-anchor="middle">0</text>
+<text x="258" y="228" class="mono value" text-anchor="middle">1</text>
+<path d="M292 191 V247" class="divider"/>
+<text x="326" y="179" class="mono small" text-anchor="middle">1</text>
+<text x="326" y="228" class="mono value" text-anchor="middle">2</text>
+<path d="M360 191 V247" class="divider"/>
+<text x="394" y="179" class="mono small" text-anchor="middle">2</text>
+<text x="394" y="228" class="mono value" text-anchor="middle">3</text>
+<path d="M428 191 V247" class="divider"/>
+<text x="462" y="179" class="mono small" text-anchor="middle">3</text>
+<text x="462" y="228" class="mono value" text-anchor="middle">4</text>
+<path d="M496 191 V247" class="divider"/>
+<text x="530" y="179" class="mono small" text-anchor="middle">4</text>
+<text x="530" y="228" class="mono value" text-anchor="middle">5</text>
+<path d="M564 191 V247" class="divider"/>
+<text x="598" y="179" class="mono small" text-anchor="middle">5</text>
+<text x="598" y="228" class="mono value" text-anchor="middle">6</text>
+<rect x="32" y="364" width="656" height="162" rx="10" class="panel"/>
+<text x="54" y="395" class="label" text-anchor="start">修改后 · 同一个列表</text>
+<text x="90" y="426" class="small" text-anchor="middle">变量名</text>
+<rect x="56" y="443" width="68" height="56" rx="7" class="node"/>
+<text x="90" y="480" class="mono value" text-anchor="middle">a</text>
+<path d="M124 471 H224" class="arrow" marker-end="url(#mutation-arrow)"/>
+<text x="174" y="454" class="small" text-anchor="middle">仍指向</text>
+<rect x="224" y="443" width="408" height="56" rx="0" class="node"/>
+<text x="258" y="431" class="mono small" text-anchor="middle">0</text>
+<text x="258" y="480" class="mono value" text-anchor="middle">1</text>
+<path d="M292 443 V499" class="divider"/>
+<text x="326" y="431" class="mono small" text-anchor="middle">1</text>
+<text x="326" y="480" class="mono value" text-anchor="middle">2</text>
+<path d="M360 443 V499" class="divider"/>
+<text x="394" y="431" class="mono small" text-anchor="middle">2</text>
+<text x="394" y="480" class="mono value" text-anchor="middle">5</text>
+<path d="M428 443 V499" class="divider"/>
+<text x="462" y="431" class="mono small" text-anchor="middle">3</text>
+<text x="462" y="480" class="mono value" text-anchor="middle">4</text>
+<path d="M496 443 V499" class="divider"/>
+<text x="530" y="431" class="mono small" text-anchor="middle">4</text>
+<text x="530" y="480" class="mono value" text-anchor="middle">5</text>
+<path d="M564 443 V499" class="divider"/>
+<text x="598" y="431" class="mono small" text-anchor="middle">5</text>
+<text x="598" y="480" class="mono value" text-anchor="middle">6</text>
+<rect x="360" y="443" width="68" height="56" fill="none" stroke="var(--ink)" stroke-width="3"/>
+<path d="M360 274 V297 M360 341 V364" class="arrow" marker-end="url(#mutation-arrow)"/>
+<rect x="231" y="297" width="258" height="44" rx="6" class="node"/>
+<text x="360" y="326" class="mono code" text-anchor="middle">a[2] = 5</text>
+<path d="M394 500 V540" class="arrow"/>
+<text x="394" y="566" class="label" text-anchor="middle">索引 2：3 → 5</text>
+<text x="360" y="599" class="subtitle" text-anchor="middle">索引从 0 开始，a[2] 是第 3 个元素。</text>
+</svg>

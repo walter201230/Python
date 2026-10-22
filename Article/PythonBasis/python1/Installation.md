@@ -1,5 +1,7 @@
 # 二、Python 的安装 #
 
+> 下面的截图和命令以 Python 3.6／3.7 为例，当前安装界面可能不同。准备后续练习时，请从 [Python 官方下载页](https://www.python.org/downloads/) 选择仍受维护的 Python 3，并核对各章标明的最低版本；安装完成后用 `python3 --version`（Windows 也可用 `py --version`）确认实际运行的解释器。路径应以自己的安装位置为准。
+
 因为 Python 是跨平台的，它可以运行在 Windows、Mac 和各种 Linux/Unix 系统上。目前，Python 有两个版本，一个是 2.x 版，一个是 3.x版，这两个版本是不兼容的。本草根安装的是 3.6.1 版本的。
 
 至于在哪里下载，草根我建议大家最好直接官网下载，随时下载下来的都是最新版本。官网地址：[https://www.python.org/](https://www.python.org/)

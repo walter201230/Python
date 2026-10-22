@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="diagram" width="720" height="610" viewBox="0 0 720 610" role="img" aria-labelledby="title desc" lang="zh-CN">
+<title id="title">类的结构</title><desc id="desc">通过属性表达数据，通过方法表达行为。</desc>
+<style>
+ .diagram { --paper:#ffffff; --panel:#f5f7fa; --cell:#ffffff; --ink:#1c293b; --muted:#64748b; --line:#63758c; --border:#c5cfdd; }
+ @media (prefers-color-scheme:dark) {
+ .diagram { --paper:#0c1523; --panel:#142133; --cell:#0e1929; --ink:#edf2f8; --muted:#a7b5c8; --line:#bdc9d9; --border:#465a74; }
+ }
+ text { font-family:"PingFang SC","Microsoft YaHei","Noto Sans CJK SC",sans-serif; fill:var(--ink); }
+ .title { font-size:28px; font-weight:650; }
+ .subtitle { font-size:17px; fill:var(--muted); }
+ .label { font-size:17px; font-weight:550; }
+ .small { font-size:15px; fill:var(--muted); }
+ .mono { font-family:"SFMono-Regular",Consolas,"Liberation Mono",monospace; }
+ .code { font-size:20px; }
+ .value { font-size:27px; font-weight:550; }
+ .paper { fill:var(--paper); }
+ .panel { fill:var(--panel); stroke:var(--border); stroke-width:1; }
+ .node { fill:var(--cell); stroke:var(--line); stroke-width:1.7; }
+ .arrow { fill:none; stroke:var(--line); stroke-width:2; }
+ .divider { fill:none; stroke:var(--border); stroke-width:1; }
+
+ .body {font-size:18px;} .heading {font-size:22px;font-weight:600;} .note {font-size:16px;fill:var(--muted);}</style><defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1 L7 4 L1 7" class="arrow"/></marker></defs>
+<rect width="720" height="610" rx="12" class="paper"/>
+<text x="32" y="47" class="title" text-anchor="start">类的结构</text><text x="32" y="78" class="subtitle" text-anchor="start">通过属性表达数据，通过方法表达行为。</text><rect x="84" y="120" width="552" height="394" rx="8" class="panel"/><text x="360" y="159" class="heading" text-anchor="middle">类</text><path d="M84 184 H636" class="arrow"/><rect x="126" y="218" width="468" height="100" rx="8" class="node"/><text x="360.0" y="261.5" class="body" text-anchor="middle">属性</text><text x="360.0" y="286.5" class="body" text-anchor="middle">变量 1、变量 2、变量 3、…</text><rect x="126" y="354" width="468" height="100" rx="8" class="node"/><text x="360.0" y="397.5" class="body" text-anchor="middle">方法</text><text x="360.0" y="422.5" class="body" text-anchor="middle">函数 1、函数 2、函数 3、…</text><text x="360" y="568" class="subtitle" text-anchor="middle">类把相关的数据和行为组织在一起。</text></svg>

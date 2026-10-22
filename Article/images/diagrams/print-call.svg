@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="diagram" width="720" height="390" viewBox="0 0 720 390" role="img" aria-labelledby="title desc" lang="zh-CN">
+<title id="title">print() 的组成</title><desc id="desc">先看函数名，再看括号中的参数。</desc>
+<style>
+ .diagram { --paper:#ffffff; --panel:#f5f7fa; --cell:#ffffff; --ink:#1c293b; --muted:#64748b; --line:#63758c; --border:#c5cfdd; }
+ @media (prefers-color-scheme:dark) {
+ .diagram { --paper:#0c1523; --panel:#142133; --cell:#0e1929; --ink:#edf2f8; --muted:#a7b5c8; --line:#bdc9d9; --border:#465a74; }
+ }
+ text { font-family:"PingFang SC","Microsoft YaHei","Noto Sans CJK SC",sans-serif; fill:var(--ink); }
+ .title { font-size:28px; font-weight:650; }
+ .subtitle { font-size:17px; fill:var(--muted); }
+ .label { font-size:17px; font-weight:550; }
+ .small { font-size:15px; fill:var(--muted); }
+ .mono { font-family:"SFMono-Regular",Consolas,"Liberation Mono",monospace; }
+ .code { font-size:20px; }
+ .value { font-size:27px; font-weight:550; }
+ .paper { fill:var(--paper); }
+ .panel { fill:var(--panel); stroke:var(--border); stroke-width:1; }
+ .node { fill:var(--cell); stroke:var(--line); stroke-width:1.7; }
+ .arrow { fill:none; stroke:var(--line); stroke-width:2; }
+ .divider { fill:none; stroke:var(--border); stroke-width:1; }
+
+ .body {font-size:18px;} .heading {font-size:22px;font-weight:600;} .note {font-size:16px;fill:var(--muted);}</style><defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1 L7 4 L1 7" class="arrow"/></marker></defs>
+<rect width="720" height="390" rx="12" class="paper"/>
+<text x="32" y="47" class="title" text-anchor="start">print() 的组成</text><text x="32" y="78" class="subtitle" text-anchor="start">先看函数名，再看括号中的参数。</text><rect x="48" y="116" width="624" height="126" rx="8" class="panel"/><text x="150" y="188" class="mono value" text-anchor="start">print</text><text x="238" y="188" class="mono value" text-anchor="start">(</text><text x="269" y="188" class="mono value" text-anchor="start">&#x27;Hello Python&#x27;</text><text x="499" y="188" class="mono value" text-anchor="start">)</text><path d="M150 201 H228 M269 201 H495" class="arrow"/><path d="M189 201 V272" class="arrow"/><path d="M382 201 V272" class="arrow"/><text x="189" y="305" class="label" text-anchor="middle">函数名</text><text x="382" y="305" class="label" text-anchor="middle">要输出的内容</text><text x="360" y="355" class="subtitle" text-anchor="middle">括号中的内容作为参数传给 print()。</text></svg>

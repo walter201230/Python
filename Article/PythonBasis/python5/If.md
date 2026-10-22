@@ -10,7 +10,7 @@ Python 程序语言指定任何非 0 和非空（null）值为 True，0 或者 n
 
 执行的流程图如下：
 
-![if 条件语句流程图](if_flowchart.png)
+![if 条件判断](../../images/diagrams/if-flow.svg)
 
 
 ## 2、if 语句的基本形式 ##

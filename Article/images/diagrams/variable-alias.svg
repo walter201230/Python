@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="diagram" width="720" height="690" viewBox="0 0 720 690" role="img" aria-labelledby="title desc" lang="zh-CN">
+<title id="title">两个名字与两个对象</title><desc id="desc">b = a 绑定同一个对象；之后给 a 赋值，不会改变 b。</desc>
+<style>
+ .diagram { --paper:#ffffff; --panel:#f5f7fa; --cell:#ffffff; --ink:#1c293b; --muted:#64748b; --line:#63758c; --border:#c5cfdd; }
+ @media (prefers-color-scheme:dark) {
+ .diagram { --paper:#0c1523; --panel:#142133; --cell:#0e1929; --ink:#edf2f8; --muted:#a7b5c8; --line:#bdc9d9; --border:#465a74; }
+ }
+ text { font-family:"PingFang SC","Microsoft YaHei","Noto Sans CJK SC",sans-serif; fill:var(--ink); }
+ .title { font-size:28px; font-weight:650; }
+ .subtitle { font-size:17px; fill:var(--muted); }
+ .label { font-size:17px; font-weight:550; }
+ .small { font-size:15px; fill:var(--muted); }
+ .mono { font-family:"SFMono-Regular",Consolas,"Liberation Mono",monospace; }
+ .code { font-size:20px; }
+ .value { font-size:27px; font-weight:550; }
+ .paper { fill:var(--paper); }
+ .panel { fill:var(--panel); stroke:var(--border); stroke-width:1; }
+ .node { fill:var(--cell); stroke:var(--line); stroke-width:1.7; }
+ .arrow { fill:none; stroke:var(--line); stroke-width:2; }
+ .divider { fill:none; stroke:var(--border); stroke-width:1; }
+
+ .body {font-size:18px;} .heading {font-size:22px;font-weight:600;} .note {font-size:16px;fill:var(--muted);}</style><defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1 L7 4 L1 7" class="arrow"/></marker></defs>
+<rect width="720" height="690" rx="12" class="paper"/>
+<text x="32" y="47" class="title" text-anchor="start">两个名字与两个对象</text><text x="32" y="78" class="subtitle" text-anchor="start">b = a 绑定同一个对象；之后给 a 赋值，不会改变 b。</text><rect x="32" y="112" width="656" height="150" rx="8" class="panel"/><text x="54" y="142" class="code" text-anchor="start">①  a = &#x27;Hello Python&#x27;</text><rect x="130" y="181" width="80" height="48" rx="8" class="node"/><text x="170.0" y="211.0" class="mono value" text-anchor="middle">a</text><path d="M210 205 H416" class="arrow" marker-end="url(#arrow)"/><rect x="416" y="174" width="224" height="62" rx="8" class="node"/><text x="528.0" y="211.0" class="mono code" text-anchor="middle">&#x27;Hello Python&#x27;</text><rect x="32" y="286" width="656" height="150" rx="8" class="panel"/><text x="54" y="316" class="code" text-anchor="start">②  b = a</text><rect x="130" y="336" width="80" height="40" rx="8" class="node"/><text x="170.0" y="362.0" class="mono code" text-anchor="middle">a</text><rect x="130" y="387" width="80" height="40" rx="8" class="node"/><text x="170.0" y="413.0" class="mono code" text-anchor="middle">b</text><path d="M210 356 H350 V382" class="arrow"/><path d="M210 407 H350 V382" class="arrow"/><path d="M350 382 H416" class="arrow" marker-end="url(#arrow)"/><rect x="416" y="350" width="224" height="64" rx="8" class="node"/><text x="528.0" y="388.0" class="mono code" text-anchor="middle">&#x27;Hello Python&#x27;</text><rect x="32" y="460" width="656" height="150" rx="8" class="panel"/><text x="54" y="490" class="code" text-anchor="start">③  a = 123</text><rect x="130" y="510" width="80" height="40" rx="8" class="node"/><text x="170.0" y="536.0" class="mono code" text-anchor="middle">a</text><rect x="130" y="561" width="80" height="40" rx="8" class="node"/><text x="170.0" y="587.0" class="mono code" text-anchor="middle">b</text><path d="M210 530 H416" class="arrow" marker-end="url(#arrow)"/><path d="M210 581 H416" class="arrow" marker-end="url(#arrow)"/><rect x="416" y="510" width="224" height="40" rx="8" class="node"/><text x="528.0" y="536.0" class="mono code" text-anchor="middle">123</text><rect x="416" y="561" width="224" height="40" rx="8" class="node"/><text x="528.0" y="587.0" class="mono code" text-anchor="middle">&#x27;Hello Python&#x27;</text><text x="360" y="650" class="subtitle" text-anchor="middle">print(b) 的结果仍是 Hello Python。</text></svg>

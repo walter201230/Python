@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="diagram" width="720" height="610" viewBox="0 0 720 610" role="img" aria-labelledby="title desc" lang="zh-CN">
+<title id="title">if 条件判断</title><desc id="desc">条件成立才执行语句块，然后继续后面的程序。</desc>
+<style>
+ .diagram { --paper:#ffffff; --panel:#f5f7fa; --cell:#ffffff; --ink:#1c293b; --muted:#64748b; --line:#63758c; --border:#c5cfdd; }
+ @media (prefers-color-scheme:dark) {
+ .diagram { --paper:#0c1523; --panel:#142133; --cell:#0e1929; --ink:#edf2f8; --muted:#a7b5c8; --line:#bdc9d9; --border:#465a74; }
+ }
+ text { font-family:"PingFang SC","Microsoft YaHei","Noto Sans CJK SC",sans-serif; fill:var(--ink); }
+ .title { font-size:28px; font-weight:650; }
+ .subtitle { font-size:17px; fill:var(--muted); }
+ .label { font-size:17px; font-weight:550; }
+ .small { font-size:15px; fill:var(--muted); }
+ .mono { font-family:"SFMono-Regular",Consolas,"Liberation Mono",monospace; }
+ .code { font-size:20px; }
+ .value { font-size:27px; font-weight:550; }
+ .paper { fill:var(--paper); }
+ .panel { fill:var(--panel); stroke:var(--border); stroke-width:1; }
+ .node { fill:var(--cell); stroke:var(--line); stroke-width:1.7; }
+ .arrow { fill:none; stroke:var(--line); stroke-width:2; }
+ .divider { fill:none; stroke:var(--border); stroke-width:1; }
+
+ .body {font-size:18px;} .heading {font-size:22px;font-weight:600;} .note {font-size:16px;fill:var(--muted);}</style><defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1 L7 4 L1 7" class="arrow"/></marker></defs>
+<rect width="720" height="610" rx="12" class="paper"/>
+<text x="32" y="47" class="title" text-anchor="start">if 条件判断</text><text x="32" y="78" class="subtitle" text-anchor="start">条件成立才执行语句块，然后继续后面的程序。</text><rect x="280" y="112" width="160" height="46" rx="8" class="node"/><text x="360.0" y="141.0" class="body" text-anchor="middle">开始</text><path d="M360 158 V183" class="arrow" marker-end="url(#arrow)"/><path d="M360 183.0 L470.0 248 L360 313.0 L250.0 248 Z" class="node"/><text x="360" y="254.0" class="body" text-anchor="middle">条件成立？</text><path d="M360 313 V380" class="arrow" marker-end="url(#arrow)"/><text x="380" y="350" class="small" text-anchor="start">是</text><rect x="250" y="380" width="220" height="64" rx="8" class="node"/><text x="360.0" y="418.0" class="body" text-anchor="middle">执行条件代码</text><path d="M360 444 V520" class="arrow" marker-end="url(#arrow)"/><path d="M470 248 H630 V543 H440" class="arrow" marker-end="url(#arrow)"/><text x="506" y="230" class="small" text-anchor="start">否</text><rect x="280" y="520" width="160" height="46" rx="8" class="node"/><text x="360.0" y="549.0" class="body" text-anchor="middle">结束</text></svg>
