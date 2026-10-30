@@ -31,8 +31,8 @@ def extract_blocks(md_path: Path) -> list[tuple[int, str, bool]]:
     return blocks
 
 
-def run_block(code: str, timeout: int = 30) -> tuple[bool, str]:
-    """把 code 写到临时文件并跑，返回 (成功?, stderr)。"""
+def run_block(code: str, timeout: int = 30, cwd: str | None = None) -> tuple[bool, str]:
+    """把 code 写到临时文件并在 cwd 下跑，返回 (成功?, stderr)。"""
     with tempfile.NamedTemporaryFile(
         mode="w", suffix=".py", delete=False, encoding="utf-8"
     ) as f:
@@ -48,6 +48,7 @@ def run_block(code: str, timeout: int = 30) -> tuple[bool, str]:
             # 直到超时，在没有 stdin 的环境里立刻抛 EOFError——同一份代码两种结果，
             # CI 各版本失败数因此长期在 69~72 之间飘。钉死成 DEVNULL 让它稳定抛 EOFError。
             stdin=subprocess.DEVNULL,
+            cwd=cwd,
         )
         return result.returncode == 0, result.stderr
     except subprocess.TimeoutExpired:
@@ -66,21 +67,24 @@ def main() -> int:
     total = 0
     skipped = 0
 
-    for top in args.paths:
-        root = Path(top)
-        if not root.exists():
-            print(f"路径不存在：{root}", file=sys.stderr)
-            continue
-        for md in sorted(root.rglob("*.md")):
-            for line_no, code, skip in extract_blocks(md):
-                total += 1
-                if skip:
-                    skipped += 1
-                    continue
-                ok, err = run_block(code, args.timeout)
-                if not ok:
-                    failed += 1
-                    print(f"FAIL {md}:{line_no}\n  {err.strip()}\n")
+    # 示例会写 app.log、记录目录等文件：统一放进本次运行的临时目录，不落进调用者的当前目录；
+    # 同一次运行内共用这个目录，前一块写出的文件后一块仍能读到。
+    with tempfile.TemporaryDirectory() as workdir:
+        for top in args.paths:
+            root = Path(top)
+            if not root.exists():
+                print(f"路径不存在：{root}", file=sys.stderr)
+                continue
+            for md in sorted(root.rglob("*.md")):
+                for line_no, code, skip in extract_blocks(md):
+                    total += 1
+                    if skip:
+                        skipped += 1
+                        continue
+                    ok, err = run_block(code, args.timeout, workdir)
+                    if not ok:
+                        failed += 1
+                        print(f"FAIL {md}:{line_no}\n  {err.strip()}\n")
 
     print(f"\n总计 {total} 块；跳过 {skipped}；失败 {failed}")
     return 1 if failed > 0 else 0
