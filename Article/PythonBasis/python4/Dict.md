@@ -192,9 +192,9 @@ print(dict1)
 |type(variable)|返回输入的变量类型，如果变量是字典就返回字典类型|
 |dict.clear()|删除字典内所有元素|
 |dict.copy()|返回一个字典的浅复制|
-|dict.values()|以列表返回字典中的所有值|
-|popitem()|随机返回并删除字典中的一对键和值|
-|dict.items()|以列表返回可遍历的(键, 值) 元组数组|
+|dict.values()|返回由字典中所有值组成的视图，可以用 for 遍历|
+|popitem()|返回并删除最后加入的一对键和值|
+|dict.items()|返回由 (键, 值) 元组组成的视图，可以用 for 遍历|
 
 
 
