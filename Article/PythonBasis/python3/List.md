@@ -232,11 +232,11 @@ print(name)
 |list.count(obj)|统计某个元素在列表中出现的次数|
 |list.extend(seq)|在列表末尾一次性追加另一个序列中的多个值（用新列表扩展原来的列表）|
 |list.index(obj)|从列表中找出某个值第一个匹配项的索引位置|
-|list.insert(index, obj)|将对象插入列表|
-|list.pop(obj=list[-1])|移除列表中的一个元素（默认最后一个元素），并且返回该元素的值|
-|list.remove(obj)|移除列表中的一个元素（参数是列表中元素），并且不返回任何值|
+|list.insert(index, obj)|在指定下标处插入元素，原位置及其后面的元素向后移动|
+|list.pop([index])|删除并返回指定下标的元素，省略下标时删除并返回最后一个元素|
+|list.remove(obj)|删除第一个等于 obj 的元素，找不到时抛出 ValueError|
 |list.reverse()|反向列表中元素|
-|list.sort([func])|对原列表进行排序|
+|list.sort(*, key=None, reverse=False)|对原列表进行排序。用 key 指定排序依据，用 reverse=True 指定降序|
 
 
 ## 8、实例 ##
@@ -270,7 +270,7 @@ print('\n4.在末尾添加新用户')
 print(user)
 
 # 5.又新增了一个用户，可是这个用户是 VIP 级别的学生，需要放在第一位，可以通过 insert 方法插入到指定的位置
-# 注意：插入数据的时候注意是否越界，索引不能超过 len(user)-1
+# 下标 0 表示插在最前面，下标等于或大于 len(user) 时插在末尾
 user.insert(0,'VIP用户')
 print('\n5.指定位置添加用户')
 print(user)
