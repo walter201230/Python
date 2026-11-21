@@ -175,3 +175,4 @@ nav:
   - 标准日志 logging: PythonBasis/python26/1.md
   - 打包发布与 typer: PythonBasis/python27/1.md
   - 学完之后做什么: PythonBasis/python28/1.md
+  - JSON: PythonBasis/python29/1.md
