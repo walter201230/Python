@@ -3,7 +3,7 @@
 用法：
     python tools/example_runner.py [path]
 
-不写 path 默认扫描 Article/。
+path 可以是 Markdown 文件或目录；不写 path 默认扫描 Article/。
 代码块前若有 <!-- skip-ci --> 注释行则跳过。
 """
 
@@ -59,7 +59,7 @@ def run_block(code: str, timeout: int = 30, cwd: str | None = None) -> tuple[boo
 
 def main() -> int:
     parser = argparse.ArgumentParser()
-    parser.add_argument("paths", nargs="*", default=["Article"])
+    parser.add_argument("paths", nargs="*", default=["Article"], help="Markdown 文件或目录")
     parser.add_argument("--timeout", type=int, default=30)
     args = parser.parse_args()
 
@@ -72,10 +72,13 @@ def main() -> int:
     with tempfile.TemporaryDirectory() as workdir:
         for top in args.paths:
             root = Path(top)
-            if not root.exists():
-                print(f"路径不存在：{root}", file=sys.stderr)
-                continue
-            for md in sorted(root.rglob("*.md")):
+            if root.is_dir():
+                articles = sorted(root.rglob("*.md"))
+            elif root.is_file() and root.suffix.lower() == ".md":
+                articles = [root]
+            else:
+                parser.error(f"请指定存在的 Markdown 文件或目录：{root}")
+            for md in articles:
                 for line_no, code, skip in extract_blocks(md):
                     total += 1
                     if skip:
