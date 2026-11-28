@@ -1,14 +1,16 @@
-"""扫描 Article/**/*.md，提取 ```python 代码块逐块跑一遍。
+"""扫描 tutorials/**/*.md，提取 ```python 代码块逐块跑一遍。
 
 用法：
     python tools/example_runner.py [path]
 
-不写 path 默认扫描 Article/。
+不写 path 默认扫描 tutorials/。
 代码块前若有 <!-- skip-ci --> 注释行则跳过。
 """
 
 import argparse
+import os
 import re
+import shutil
 import subprocess
 import sys
 import tempfile
@@ -38,6 +40,8 @@ def run_block(code: str, timeout: int = 30, cwd: str | None = None) -> tuple[boo
     ) as f:
         f.write(code)
         path = f.name
+    env = os.environ.copy()
+    env.setdefault("MPLBACKEND", "Agg")
     try:
         result = subprocess.run(
             [sys.executable, path],
@@ -49,6 +53,7 @@ def run_block(code: str, timeout: int = 30, cwd: str | None = None) -> tuple[boo
             # CI 各版本失败数因此长期在 69~72 之间飘。钉死成 DEVNULL 让它稳定抛 EOFError。
             stdin=subprocess.DEVNULL,
             cwd=cwd,
+            env=env,
         )
         return result.returncode == 0, result.stderr
     except subprocess.TimeoutExpired:
@@ -59,7 +64,7 @@ def run_block(code: str, timeout: int = 30, cwd: str | None = None) -> tuple[boo
 
 def main() -> int:
     parser = argparse.ArgumentParser()
-    parser.add_argument("paths", nargs="*", default=["Article"])
+    parser.add_argument("paths", nargs="*", default=["tutorials"])
     parser.add_argument("--timeout", type=int, default=30)
     args = parser.parse_args()
 
@@ -67,9 +72,15 @@ def main() -> int:
     total = 0
     skipped = 0
 
-    # 示例会写 app.log、记录目录等文件：统一放进本次运行的临时目录，不落进调用者的当前目录；
+    # 示例会写 app.log、记录目录等文件，数据分析示例会读 datasets/*.csv：
+    # 统一放进本次运行的临时目录，不落进调用者的当前目录；
     # 同一次运行内共用这个目录，前一块写出的文件后一块仍能读到。
+    datasets_dir = Path(__file__).resolve().parents[1] / "datasets"
     with tempfile.TemporaryDirectory() as workdir:
+        if datasets_dir.is_dir():
+            for csv in datasets_dir.glob("*.csv"):
+                shutil.copy2(csv, Path(workdir) / csv.name)
+
         for top in args.paths:
             root = Path(top)
             if not root.exists():

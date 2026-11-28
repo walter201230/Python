@@ -1,13 +1,13 @@
 site_name: 小白学Python
-site_description: 25k star 中文 Python 入门 + 进阶教程，2026 现代化版
+site_description: 28k+ star 中文 Python 入门、进阶、工程化、爬虫与数据分析教程
 site_url: https://walter201230.github.io/Python/
 repo_url: https://github.com/walter201230/Python
 repo_name: walter201230/Python
 copyright: Copyright © 2017-2026 水哥
 
-docs_dir: Article
+docs_dir: tutorials
 
-# 保留旧网址，将在线阅读入口统一到 learn-py.org。
+# 保留旧网址与新路径，将在线阅读入口统一到 learn-py.org。
 hooks:
   - tools/pages_redirects.py
 
@@ -62,116 +62,66 @@ markdown_extensions:
 
 nav:
   - 首页: index.md
-  - 为什么学 Python: PythonBasis/python0/WhyStudyPython.md
-  - 代码规范:
-      - 序: codeSpecification/codeSpecification_Preface.md
-      - 简明概述: codeSpecification/codeSpecification_first.md
-      - 注释: codeSpecification/codeSpecification_second.md
-      - 命名规范: codeSpecification/codeSpecification_third.md
-  - 第一个 Python 程序:
-      - 序: PythonBasis/python1/Preface.md
-      - Python 简介: PythonBasis/python1/Introduction.md
-      - 安装: PythonBasis/python1/Installation.md
-      - 第一个程序: PythonBasis/python1/The_first_procedure.md
-      - PyCharm IDE: PythonBasis/python1/IDE.md
-  - 基本数据类型与变量:
-      - 序: PythonBasis/python2/Preface.md
-      - 语法说明: PythonBasis/python2/Grammar.md
-      - print 函数: PythonBasis/python2/print.md
-      - 基本数据类型: PythonBasis/python2/Type_of_data.md
-      - 字符串编码: PythonBasis/python2/StringCoding.md
-      - 类型转换: PythonBasis/python2/Type_conversion.md
-      - 变量: PythonBasis/python2/Variable.md
-  - List 与 Tuple:
-      - 序: PythonBasis/python3/Preface.md
-      - List 列表: PythonBasis/python3/List.md
-      - Tuple 元组: PythonBasis/python3/tuple.md
-  - Dict 与 Set:
-      - 序: PythonBasis/python4/Preface.md
-      - 字典: PythonBasis/python4/Dict.md
-      - 集合: PythonBasis/python4/Set.md
-  - 条件与循环:
-      - 序: PythonBasis/python5/Preface.md
-      - 条件语句: PythonBasis/python5/If.md
-      - 循环语句: PythonBasis/python5/Cycle.md
-      - 综合实例: PythonBasis/python5/Example.md
-  - 函数:
-      - 序: PythonBasis/python6/Preface.md
-      - 自定义函数: PythonBasis/python6/1.md
-      - 返回值: PythonBasis/python6/2.md
-      - 参数: PythonBasis/python6/3.md
-      - 传值问题: PythonBasis/python6/4.md
-      - 匿名函数: PythonBasis/python6/5.md
-  - 迭代器与生成器:
-      - 序: PythonBasis/python7/Preface.md
-      - 迭代: PythonBasis/python7/1.md
-      - 迭代器: PythonBasis/python7/2.md
-      - 列表生成式: PythonBasis/python7/3.md
-      - 生成器: PythonBasis/python7/4.md
-      - 综合例子: PythonBasis/python7/5.md
-  - 面向对象:
-      - 序: PythonBasis/python8/Preface.md
-      - 概念: PythonBasis/python8/1.md
-      - 类的定义: PythonBasis/python8/2.md
-      - 类方法: PythonBasis/python8/3.md
-      - 修改类属性: PythonBasis/python8/4.md
-      - 类和对象: PythonBasis/python8/5.md
-      - 初始化函数: PythonBasis/python8/6.md
-      - 继承: PythonBasis/python8/7.md
-      - 多态: PythonBasis/python8/8.md
-      - 访问控制: PythonBasis/python8/9.md
-  - 模块与包:
-      - 序: PythonBasis/python9/Preface.md
-      - 模块简介: PythonBasis/python9/1.md
-      - 模块使用: PythonBasis/python9/2.md
-      - 主模块: PythonBasis/python9/3.md
-      - 包: PythonBasis/python9/4.md
-      - 作用域: PythonBasis/python9/5.md
-  - Magic Method:
-      - 序: PythonBasis/python10/Preface.md
-      - 概念: PythonBasis/python10/1.md
-      - 构造与初始化: PythonBasis/python10/2.md
-      - 属性访问控制: PythonBasis/python10/3.md
-      - 描述器: PythonBasis/python10/4.md
-      - 自定义容器: PythonBasis/python10/5.md
-      - 运算符魔术方法: PythonBasis/python10/6.md
-  - 枚举类:
-      - 序: PythonBasis/python11/Preface.md
-      - 使用: PythonBasis/python11/1.md
-      - Enum 源码: PythonBasis/python11/2.md
-      - 自定义类型: PythonBasis/python11/3.md
-      - 枚举比较: PythonBasis/python11/4.md
-  - 元类:
-      - 序: PythonBasis/python12/Preface.md
-      - 类是对象: PythonBasis/python12/1.md
-      - 用 type 创建类: PythonBasis/python12/2.md
-      - 什么是元类: PythonBasis/python12/3.md
-      - 自定义元类: PythonBasis/python12/4.md
-      - 使用元类: PythonBasis/python12/5.md
-  - 线程与进程:
-      - 序: PythonBasis/python13/Preface.md
-      - 概念: PythonBasis/python13/1.md
-      - 多线程编程: PythonBasis/python13/2.md
-      - 进程: PythonBasis/python13/3.md
-  - 正则表达式:
-      - 序: PythonBasis/python14/Preface.md
-      - 初识: PythonBasis/python14/1.md
-      - 字符集: PythonBasis/python14/2.md
-      - 数量词: PythonBasis/python14/3.md
-      - 边界匹配符: PythonBasis/python14/4.md
-      - re.sub: PythonBasis/python14/5.md
-      - re.match 与 re.search: PythonBasis/python14/6.md
-  - 闭包: PythonBasis/python15/1.md
-  - 装饰器: PythonBasis/python16/1.md
-  - 类型注解: PythonBasis/python17/1.md
-  - pathlib 路径处理: PythonBasis/python18/1.md
-  - 异常处理与异常组: PythonBasis/python19/1.md
-  - dataclass 与 Pydantic: PythonBasis/python20/1.md
-  - 上下文管理器: PythonBasis/python21/1.md
-  - async/await 与并发: PythonBasis/python22/1.md
-  - 工程基线 pyproject 与 uv: PythonBasis/python23/1.md
-  - 代码风格 ruff: PythonBasis/python24/1.md
-  - 单元测试 pytest: PythonBasis/python25/1.md
-  - 标准日志 logging: PythonBasis/python26/1.md
-  - 打包发布与 typer: PythonBasis/python27/1.md
-  - 学完之后做什么: PythonBasis/python28/1.md
+  - Python 基础:
+      - 第 0 章 为什么学 Python: 01-basics/00-why-python.md
+      - Python 代码规范: 01-basics/00b-code-specification.md
+      - 第 1 章 第一个 Python 程序: 01-basics/01-hello-world.md
+      - 第 2 章 基本数据类型与变量: 01-basics/02-data-types-and-variables.md
+      - 实战 1 和程序对话: 01-basics/02b-practice-1-talk-to-program.md
+      - 第 3 章 List 与 Tuple: 01-basics/03-list-and-tuple.md
+      - 第 4 章 Dict 与 Set: 01-basics/04-dict-and-set.md
+      - 第 5 章 条件与循环: 01-basics/05-conditions-and-loops.md
+      - 实战 2 记账本 v1: 01-basics/05b-practice-2-ledger-v1.md
+      - 第 6 章 函数: 01-basics/06-functions.md
+      - 实战 3 读懂报错与调试: 01-basics/06b-practice-3-debugging.md
+      - 第 7 章 迭代器与生成器: 01-basics/07-iteration.md
+      - 第 8 章 面向对象: 01-basics/08-oop.md
+      - 实战 4 同一个记账本写三遍: 01-basics/08b-practice-4-ledger-rewrite.md
+      - 第 9 章 模块与包: 01-basics/09-modules.md
+      - 实战 5 文件、csv 与 json: 01-basics/09b-practice-5-files-csv-json.md
+      - 实战 6 自学一个新模块: 01-basics/09c-practice-6-learn-a-module.md
+  - Python 进阶:
+      - 第 10 章 Magic Method: 02-advanced/10-magic-methods.md
+      - 第 11 章 枚举类: 02-advanced/11-enum.md
+      - 第 12 章 元类: 02-advanced/12-metaclass.md
+      - 第 13 章 线程与进程: 02-advanced/13-threading.md
+      - 第 14 章 正则表达式: 02-advanced/14-regex.md
+      - 第 15 章 闭包: 02-advanced/15-closure.md
+      - 第 16 章 装饰器: 02-advanced/16-decorator.md
+      - 第 17 章 类型注解: 02-advanced/17-type-hints.md
+      - 第 18 章 pathlib 路径处理: 02-advanced/18-pathlib.md
+      - 第 19 章 异常处理与异常组: 02-advanced/19-exception-handling.md
+      - 第 20 章 dataclass 与 Pydantic: 02-advanced/20-dataclass.md
+      - 第 21 章 上下文管理器: 02-advanced/21-context-manager.md
+      - 第 22 章 async/await 与并发: 02-advanced/22-async.md
+  - 工程化与发布:
+      - 第 23 章 工程基线 pyproject 与 uv: 03-engineering/23-pyproject-uv.md
+      - 第 24 章 代码风格 ruff: 03-engineering/24-ruff.md
+      - 第 25 章 单元测试 pytest: 03-engineering/25-pytest.md
+      - 第 26 章 标准日志 logging: 03-engineering/26-logging.md
+      - 第 27 章 打包发布与 typer: 03-engineering/27-pypi.md
+      - 第 28 章 学完之后做什么: 03-engineering/28-whats-next.md
+  - Python 爬虫:
+      - 第 1 章 爬虫能做什么、不能做什么: 04-crawler/01-crawler-intro.md
+      - 第 2 章 一次请求发生了什么: 04-crawler/02-http-request.md
+      - 第 3 章 看懂 HTML，会用开发者工具: 04-crawler/03-html-and-devtools.md
+      - 第 4 章 BeautifulSoup 基础: 04-crawler/04-beautifulsoup-basics.md
+      - 第 5 章 从列表页提取多条数据: 04-crawler/05-extract-list.md
+      - 第 6 章 翻页与礼貌地爬: 04-crawler/06-pagination-and-politeness.md
+      - 第 7 章 数据藏在接口里: 04-crawler/07-json-api.md
+      - 第 8 章 存下来：csv、json 与 sqlite3: 04-crawler/08-save-data.md
+      - 第 9 章 综合项目：爬完整个书店: 04-crawler/09-bookstore-project.md
+      - 第 10 章 回到自己电脑：本地环境与练习网站: 04-crawler/10-local-requests.md
+      - 第 11 章 Session 与 Cookie：登录以后再抓: 04-crawler/11-session-and-cookies.md
+      - 第 12 章 动态页面与并发: 04-crawler/12-dynamic-and-concurrency.md
+  - Python 数据分析:
+      - 第 1 章 数据分析在做什么: 05-data-analysis/01-what-is-analysis.md
+      - 第 2 章 认识 DataFrame: 05-data-analysis/02-first-dataframe.md
+      - 第 3 章 挑出想要的数据: 05-data-analysis/03-selecting-data.md
+      - 第 4 章 用几个数说清一列: 05-data-analysis/04-descriptive-stats.md
+      - 第 5 章 把数据洗干净: 05-data-analysis/05-data-cleaning.md
+      - 第 6 章 分组汇总与透视表: 05-data-analysis/06-groupby-and-pivot.md
+      - 第 7 章 把几张表拼起来: 05-data-analysis/07-merge-and-concat.md
+      - 第 8 章 把数字画成图: 05-data-analysis/08-charts.md
+      - 第 9 章 综合项目一：分析一年的记账本: 05-data-analysis/09-ledger-analysis.md
+      - 第 10 章 综合项目二：给书店写一份分析报告: 05-data-analysis/10-bookstore-report.md

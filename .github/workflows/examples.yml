@@ -19,5 +19,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: ${{ matrix.python-version }}
+      - name: Install example dependencies
+        run: pip install requests beautifulsoup4 pandas matplotlib
       - name: Run examples
-        run: python tools/example_runner.py Article
+        run: python tools/example_runner.py tutorials

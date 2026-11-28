@@ -4,10 +4,17 @@ from html.parser import HTMLParser
 import json
 from pathlib import Path
 import re
+import tempfile
 from types import SimpleNamespace
 import unittest
 
-from pages_redirects import on_page_markdown, on_post_page, target_url
+from pages_redirects import (
+    LEGACY_URIS,
+    on_page_markdown,
+    on_post_build,
+    on_post_page,
+    target_url,
+)
 
 
 class Tags(HTMLParser):
@@ -26,16 +33,19 @@ class RedirectTests(unittest.TestCase):
             "PythonBasis/python2/Type_of_data.md": "https://learn-py.org/lessons/python2/data-types-and-variables/read/",
             "PythonBasis/python28/1.md": "https://learn-py.org/lessons/python28/whats-next/read/",
             "codeSpecification/codeSpecification_second.md": "https://learn-py.org/lessons/python17/readable-code/read/",
+            "01-basics/02-data-types-and-variables.md": "https://learn-py.org/lessons/python2/data-types-and-variables/read/",
+            "04-crawler/01-crawler-intro.md": "https://learn-py.org/lessons/crawler1/crawler-intro/read/",
+            "05-data-analysis/10-bookstore-report.md": "https://learn-py.org/lessons/data10/bookstore-report/read/",
         }.items():
             with self.subTest(source=source):
                 self.assertEqual(target_url(source), target)
 
-    def test_every_existing_article_has_a_target(self):
-        articles = Path(__file__).resolve().parents[1] / "Article"
-        sources = list(articles.rglob("*.md"))
-        self.assertTrue(sources)
-        for source in sources:
-            uri = source.relative_to(articles).as_posix()
+    def test_every_tutorial_and_legacy_uri_has_a_target(self):
+        tutorials = Path(__file__).resolve().parents[1] / "tutorials"
+        sources = [p.relative_to(tutorials).as_posix() for p in tutorials.rglob("*.md")]
+        self.assertEqual(len(sources), 59)  # index.md + 58 篇教程
+        self.assertEqual(len(LEGACY_URIS), 99)
+        for uri in [*sources, *LEGACY_URIS]:
             with self.subTest(source=uri):
                 url = target_url(uri)
                 if uri != "index.md":
@@ -59,20 +69,21 @@ class RedirectTests(unittest.TestCase):
         self.assertIn('&lt;script&gt;bad()&lt;/script&gt;', html)
         self.assertNotIn("原教程正文", html)
 
-    def test_early_replace_preserves_all_chapter_targets(self):
-        articles = Path(__file__).resolve().parents[1] / "Article"
-        for source in articles.rglob("*.md"):
-            uri = source.relative_to(articles).as_posix()
-            page = SimpleNamespace(file=SimpleNamespace(src_uri=uri), title="课程")
-            html = on_post_page("正文", page=page)
-            script = re.search(r'<script>window\.location\.replace\((.*?)\);</script>', html)
-            with self.subTest(source=uri):
-                self.assertIsNotNone(script)
-                self.assertEqual(json.loads(script.group(1)), target_url(uri))
-                self.assertLess(script.start(), html.index('<body>'))
-                self.assertLess(html.index('background: #020617'), script.start())
-                self.assertIn('content="0; url=' + target_url(uri) + '"', html)
-                self.assertLess(len(html.encode()), 2048)
+    def test_early_replace_preserves_all_targets_and_legacy_output(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            on_post_build(config={"site_dir": tmp})
+            for uri in LEGACY_URIS:
+                out = Path(tmp) / Path(uri).with_suffix("") / "index.html"
+                with self.subTest(source=uri):
+                    self.assertTrue(out.exists())
+                    html = out.read_text(encoding="utf-8")
+                    script = re.search(r'<script>window\.location\.replace\((.*?)\);</script>', html)
+                    self.assertIsNotNone(script)
+                    self.assertEqual(json.loads(script.group(1)), target_url(uri))
+                    self.assertLess(script.start(), html.index('<body>'))
+                    self.assertLess(html.index('background: #020617'), script.start())
+                    self.assertIn('content="0; url=' + target_url(uri) + '"', html)
+                    self.assertLess(len(html.encode()), 2048)
 
     def test_search_content_is_migration_notice(self):
         page = SimpleNamespace(file=SimpleNamespace(src_uri="index.md"))
